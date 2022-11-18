@@ -1,0 +1,7 @@
+<h1>Add email to mailing list</h1>
+<form action="" method="POST">
+    {%csrf_token%}
+    {{recipient_form}}
+    <a href="/follows">Cancel</a>
+    <input type="submit" name="Create" value='Create'>
+</form>

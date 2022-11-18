@@ -1,0 +1,57 @@
+<h1>List of Stocks</h1>
+{% if stock_list %}
+    <table>
+        <tr>
+            <th>Name | </th>
+            <th>Low | </th>
+            <th>High | </th>
+            <th>Current Price | </th>
+            <th>Minutes between updates | </th>
+            <th>Edit | </th>
+            <th>Delete</th>
+        </tr>
+        {% for stock in stock_list %}
+            <form action="" method="POST">
+                <tr>
+                    <td>{{stock.sigla}}</td>
+                    <td>{{stock.low}}</td>
+                    <td>{{stock.high}}</td>
+                    <td>{{stock.currentPrice}}</td>
+                    <td>{{stock.minutes}}</td>
+                    <td><a href="{% url 'update_stock' stock.id %}">Update</a></td>
+                    <td><a href="{% url 'delete_stock' stock.id %}">Delete</a></td>
+                </tr>
+            </form>
+        {% endfor %}
+    </table>
+    {% else %}
+    <p>No shares are available.</p>
+{% endif %}
+
+<form action="" method="POST">
+    <h1>Add New Stock</h1>
+    {%csrf_token%}
+    {{stock_form}}
+    <input type="submit" name="Create" value='Create'>
+</form>
+
+<h1>List of Emails</h1>
+{% if recipient_list %}
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Delete</th>
+        </tr>
+        {% for recipient in recipient_list %}
+            <form action="" method="POST">
+                <tr>
+                    <td>{{recipient.email}}</td>
+                    <td><a href="{% url 'delete_email' recipient.id %}">Delete</a></td>
+                </tr>
+            </form>
+        {% endfor %}
+    </table>
+    {% else %}
+    <p>No emails are available.</p>
+{% endif %}
+<td><a href="{% url 'add_recipient' %}">Add new email</a></td>
