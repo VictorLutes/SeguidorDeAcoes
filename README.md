@@ -19,8 +19,8 @@ Para executar:
     2o terminal executa: "redis-server"
     3o terminal executa: "celery -A followShares worker -l info"
 
-    agora no ser browser busque: "http://localhost:8080" (substituindo 8080 pela porta usada)
-    nessa pagina voce pode visualizar e adicionar acoes a serem acompanhadas e adicionar emails para receberem notificacoes se o valor de alguma delas sair do valor do tunel buscado
+agora no ser browser busque: "http://localhost:8080" (substituindo 8080 pela porta usada)
+nessa pagina voce pode visualizar e adicionar acoes a serem acompanhadas e adicionar emails para receberem notificacoes se o valor de alguma delas sair do valor do tunel buscado
 
-    para parar a execucao do celery worker que envia os emails e atualiza os valores das acoes execute (senao vai continuar com o processo rodando e enviando emails):
-        pkill -f celery
+para parar a execucao do celery worker que envia os emails e atualiza os valores das acoes execute (senao vai continuar com o processo rodando e enviando emails):
+    pkill -f celery
