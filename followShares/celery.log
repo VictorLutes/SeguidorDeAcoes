@@ -24989,3 +24989,574 @@ ZeroDivisionError: integer division or modulo by zero
 [2022-11-18 23:55:53,346: WARNING/ForkPoolWorker-7] Current value of stock: 180.19, high value of tunnel: 100, current time: 2022-11-18 20:55:53.346121+00:00
 [2022-11-18 23:55:53,346: WARNING/ForkPoolWorker-7] send email sell
 [2022-11-18 23:55:56,875: INFO/ForkPoolWorker-7] Task update_shares[8b2f9abd-0417-467a-a763-f75bb227b08e] succeeded in 6.011520934058353s: None
+[2022-11-18 23:56:50,915: INFO/MainProcess] Task update_shares[bd271978-9418-43a5-8aea-45510e17a826] received
+[2022-11-18 23:56:50,918: INFO/ForkPoolWorker-7] Task update_shares[bd271978-9418-43a5-8aea-45510e17a826] succeeded in 0.002204420045018196s: None
+[2022-11-18 23:57:50,958: INFO/MainProcess] Task update_shares[381f525a-97da-425e-b3fa-5c1b21f4ccf7] received
+[2022-11-18 23:57:50,962: INFO/ForkPoolWorker-7] Task update_shares[381f525a-97da-425e-b3fa-5c1b21f4ccf7] succeeded in 0.002690659021027386s: None
+[2022-11-18 23:58:51,013: INFO/MainProcess] Task update_shares[2d7f2ef5-577e-4936-8d16-5c82f42901d6] received
+[2022-11-18 23:58:53,087: WARNING/ForkPoolWorker-7] victorclutes@gmail.com
+[2022-11-18 23:58:53,087: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-18 23:58:53,087: WARNING/ForkPoolWorker-7]  
+[2022-11-18 23:58:53,087: WARNING/ForkPoolWorker-7] META
+[2022-11-18 23:58:53,087: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-18 23:58:53,087: WARNING/ForkPoolWorker-7]  
+[2022-11-18 23:58:53,087: WARNING/ForkPoolWorker-7] 112.05
+[2022-11-18 23:58:53,087: WARNING/ForkPoolWorker-7] Current value of stock: 112.05, high value of tunnel: 100, current time: 2022-11-18 20:58:53.087645+00:00
+[2022-11-18 23:58:53,088: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-18 23:58:56,395: INFO/ForkPoolWorker-7] Task update_shares[2d7f2ef5-577e-4936-8d16-5c82f42901d6] succeeded in 5.379794485052116s: None
+[2022-11-18 23:59:51,064: INFO/MainProcess] Task update_shares[77dc7291-5ce9-43c5-a899-fd10ead8945b] received
+[2022-11-18 23:59:53,495: WARNING/ForkPoolWorker-7] victorclutes@gmail.com
+[2022-11-18 23:59:53,495: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-18 23:59:53,496: WARNING/ForkPoolWorker-7]  
+[2022-11-18 23:59:53,496: WARNING/ForkPoolWorker-7] twtr
+[2022-11-18 23:59:53,496: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-18 23:59:53,496: WARNING/ForkPoolWorker-7]  
+[2022-11-18 23:59:53,496: WARNING/ForkPoolWorker-7] 53.7
+[2022-11-18 23:59:53,497: WARNING/ForkPoolWorker-7] Current value of stock: 53.7, high value of tunnel: 100, current time: 2022-11-18 20:59:53.496994+00:00
+[2022-11-18 23:59:53,499: INFO/ForkPoolWorker-7] Task update_shares[77dc7291-5ce9-43c5-a899-fd10ead8945b] succeeded in 2.4333571220049635s: None
+[2022-11-19 00:00:51,113: INFO/MainProcess] Task update_shares[3ce39a4d-fc2f-471b-a64d-746317d430af] received
+[2022-11-19 00:00:51,117: INFO/ForkPoolWorker-7] Task update_shares[3ce39a4d-fc2f-471b-a64d-746317d430af] succeeded in 0.0027803370030596852s: None
+[2022-11-19 00:01:51,114: INFO/MainProcess] Task update_shares[123ca356-6f12-4391-8c60-bb8984d66823] received
+[2022-11-19 00:01:51,117: INFO/ForkPoolWorker-7] Task update_shares[123ca356-6f12-4391-8c60-bb8984d66823] succeeded in 0.0024312669411301613s: None
+[2022-11-19 00:02:51,166: INFO/MainProcess] Task update_shares[df03e7ee-d270-4c12-b10f-eb5d7f29107d] received
+[2022-11-19 00:02:53,251: WARNING/ForkPoolWorker-7] victorclutes@gmail.com
+[2022-11-19 00:02:53,251: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-19 00:02:53,252: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:02:53,252: WARNING/ForkPoolWorker-7] META
+[2022-11-19 00:02:53,252: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-19 00:02:53,252: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:02:53,252: WARNING/ForkPoolWorker-7] 112.05
+[2022-11-19 00:02:53,253: WARNING/ForkPoolWorker-7] Current value of stock: 112.05, high value of tunnel: 100, current time: 2022-11-18 21:02:53.252994+00:00
+[2022-11-19 00:02:53,254: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-19 00:02:56,074: INFO/ForkPoolWorker-7] Task update_shares[df03e7ee-d270-4c12-b10f-eb5d7f29107d] succeeded in 4.906614769948646s: None
+[2022-11-19 00:03:51,215: INFO/MainProcess] Task update_shares[72dde457-bdde-4728-9067-9c5504e63b65] received
+[2022-11-19 00:03:51,221: INFO/ForkPoolWorker-7] Task update_shares[72dde457-bdde-4728-9067-9c5504e63b65] succeeded in 0.003987484960816801s: None
+[2022-11-19 00:04:51,269: INFO/MainProcess] Task update_shares[dde41020-db4f-45b5-b83e-ba2881da1374] received
+[2022-11-19 00:04:51,274: INFO/ForkPoolWorker-7] Task update_shares[dde41020-db4f-45b5-b83e-ba2881da1374] succeeded in 0.002984065911732614s: None
+[2022-11-19 00:05:51,316: INFO/MainProcess] Task update_shares[167cc7e8-de0d-4963-96f1-7dc9fe4511ca] received
+[2022-11-19 00:05:53,178: WARNING/ForkPoolWorker-7] victorclutes@gmail.com
+[2022-11-19 00:05:53,178: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-19 00:05:53,178: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:05:53,179: WARNING/ForkPoolWorker-7] TSLA
+[2022-11-19 00:05:53,179: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-19 00:05:53,179: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:05:53,179: WARNING/ForkPoolWorker-7] 180.19
+[2022-11-19 00:05:53,179: WARNING/ForkPoolWorker-7] Current value of stock: 180.19, high value of tunnel: 100, current time: 2022-11-18 21:05:53.179804+00:00
+[2022-11-19 00:05:53,180: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-19 00:05:57,868: WARNING/ForkPoolWorker-7] victorclutes@gmail.com
+[2022-11-19 00:05:57,869: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-19 00:05:57,869: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:05:57,869: WARNING/ForkPoolWorker-7] META
+[2022-11-19 00:05:57,869: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-19 00:05:57,869: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:05:57,869: WARNING/ForkPoolWorker-7] 112.05
+[2022-11-19 00:05:57,869: WARNING/ForkPoolWorker-7] Current value of stock: 112.05, high value of tunnel: 100, current time: 2022-11-18 21:05:57.869794+00:00
+[2022-11-19 00:05:57,870: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-19 00:06:00,993: INFO/ForkPoolWorker-7] Task update_shares[167cc7e8-de0d-4963-96f1-7dc9fe4511ca] succeeded in 9.67557591397781s: None
+[2022-11-19 00:06:51,367: INFO/MainProcess] Task update_shares[c0bc3c83-4707-4d6e-8bfd-187877985c97] received
+[2022-11-19 00:06:53,561: WARNING/ForkPoolWorker-7] victorclutes@gmail.com
+[2022-11-19 00:06:53,561: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-19 00:06:53,561: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:06:53,562: WARNING/ForkPoolWorker-7] META
+[2022-11-19 00:06:53,562: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-19 00:06:53,562: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:06:53,562: WARNING/ForkPoolWorker-7] 112.05
+[2022-11-19 00:06:53,562: WARNING/ForkPoolWorker-7] Current value of stock: 112.05, high value of tunnel: 100, current time: 2022-11-18 21:06:53.562466+00:00
+[2022-11-19 00:06:53,563: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-19 00:06:56,309: INFO/ForkPoolWorker-7] Task update_shares[c0bc3c83-4707-4d6e-8bfd-187877985c97] succeeded in 4.940394689096138s: None
+[2022-11-19 00:07:51,419: INFO/MainProcess] Task update_shares[708b1561-a990-415e-8012-58df57479ee7] received
+[2022-11-19 00:07:51,424: INFO/ForkPoolWorker-7] Task update_shares[708b1561-a990-415e-8012-58df57479ee7] succeeded in 0.004277485073544085s: None
+[2022-11-19 00:08:51,452: INFO/MainProcess] Task update_shares[fdebfe95-2fc6-4a6a-9ffc-73002fb10405] received
+[2022-11-19 00:08:51,456: INFO/ForkPoolWorker-7] Task update_shares[fdebfe95-2fc6-4a6a-9ffc-73002fb10405] succeeded in 0.003286074032075703s: None
+[2022-11-19 00:09:51,451: INFO/MainProcess] Task update_shares[5bb23f3f-f4f5-4510-aa9c-9063a0aed8cb] received
+[2022-11-19 00:09:53,442: WARNING/ForkPoolWorker-7] victorclutes@gmail.com
+[2022-11-19 00:09:53,442: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-19 00:09:53,442: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:09:53,442: WARNING/ForkPoolWorker-7] twtr
+[2022-11-19 00:09:53,442: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-19 00:09:53,442: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:09:53,442: WARNING/ForkPoolWorker-7] 53.7
+[2022-11-19 00:09:53,442: WARNING/ForkPoolWorker-7] Current value of stock: 53.7, high value of tunnel: 100, current time: 2022-11-18 21:09:53.442692+00:00
+[2022-11-19 00:09:55,630: WARNING/ForkPoolWorker-7] victorclutes@gmail.com
+[2022-11-19 00:09:55,630: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-19 00:09:55,630: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:09:55,630: WARNING/ForkPoolWorker-7] META
+[2022-11-19 00:09:55,630: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-19 00:09:55,630: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:09:55,630: WARNING/ForkPoolWorker-7] 112.05
+[2022-11-19 00:09:55,630: WARNING/ForkPoolWorker-7] Current value of stock: 112.05, high value of tunnel: 100, current time: 2022-11-18 21:09:55.630690+00:00
+[2022-11-19 00:09:55,631: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-19 00:09:58,478: INFO/ForkPoolWorker-7] Task update_shares[5bb23f3f-f4f5-4510-aa9c-9063a0aed8cb] succeeded in 7.025749939959496s: None
+[2022-11-19 00:10:51,493: INFO/MainProcess] Task update_shares[c532310d-da3b-4d36-99c5-05aba1cfb52f] received
+[2022-11-19 00:10:54,242: WARNING/ForkPoolWorker-7] victorclutes@gmail.com
+[2022-11-19 00:10:54,243: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-19 00:10:54,243: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:10:54,243: WARNING/ForkPoolWorker-7] META
+[2022-11-19 00:10:54,243: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-19 00:10:54,243: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:10:54,243: WARNING/ForkPoolWorker-7] 112.05
+[2022-11-19 00:10:54,243: WARNING/ForkPoolWorker-7] Current value of stock: 112.05, high value of tunnel: 100, current time: 2022-11-18 21:10:54.243551+00:00
+[2022-11-19 00:10:54,244: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-19 00:10:57,195: INFO/ForkPoolWorker-7] Task update_shares[c532310d-da3b-4d36-99c5-05aba1cfb52f] succeeded in 5.701709527987987s: None
+[2022-11-19 00:11:51,544: INFO/MainProcess] Task update_shares[0b7f94cc-917e-4c65-a7bf-70fb34dec457] received
+[2022-11-19 00:11:51,551: INFO/ForkPoolWorker-7] Task update_shares[0b7f94cc-917e-4c65-a7bf-70fb34dec457] succeeded in 0.004544415045529604s: None
+[2022-11-19 00:12:51,570: INFO/MainProcess] Task update_shares[fbbda87b-da94-4e8a-b96a-bc65bc659378] received
+[2022-11-19 00:12:51,576: INFO/ForkPoolWorker-7] Task update_shares[fbbda87b-da94-4e8a-b96a-bc65bc659378] succeeded in 0.0036333940224722028s: None
+[2022-11-19 00:13:51,621: INFO/MainProcess] Task update_shares[8ca0f9f8-3154-4933-871e-403c42420535] received
+[2022-11-19 00:13:51,624: INFO/ForkPoolWorker-7] Task update_shares[8ca0f9f8-3154-4933-871e-403c42420535] succeeded in 0.0020986140007153153s: None
+[2022-11-19 00:14:51,638: INFO/MainProcess] Task update_shares[655732e2-b253-4434-bbe2-dc5902aa6336] received
+[2022-11-19 00:14:53,809: WARNING/ForkPoolWorker-7] victorclutes@gmail.com
+[2022-11-19 00:14:53,809: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-19 00:14:53,809: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:14:53,809: WARNING/ForkPoolWorker-7] META
+[2022-11-19 00:14:53,809: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-19 00:14:53,809: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:14:53,809: WARNING/ForkPoolWorker-7] 112.05
+[2022-11-19 00:14:53,809: WARNING/ForkPoolWorker-7] Current value of stock: 112.05, high value of tunnel: 100, current time: 2022-11-18 21:14:53.809836+00:00
+[2022-11-19 00:14:53,810: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-19 00:14:57,324: INFO/ForkPoolWorker-7] Task update_shares[655732e2-b253-4434-bbe2-dc5902aa6336] succeeded in 5.684321532025933s: None
+[2022-11-19 00:15:51,659: INFO/MainProcess] Task update_shares[f36ecbac-8dfc-46c8-be08-6d15f2ea04ee] received
+[2022-11-19 00:15:53,557: WARNING/ForkPoolWorker-7] victorclutes@gmail.com
+[2022-11-19 00:15:53,557: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-19 00:15:53,558: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:15:53,558: WARNING/ForkPoolWorker-7] TSLA
+[2022-11-19 00:15:53,558: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-19 00:15:53,558: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:15:53,558: WARNING/ForkPoolWorker-7] 180.19
+[2022-11-19 00:15:53,558: WARNING/ForkPoolWorker-7] Current value of stock: 180.19, high value of tunnel: 100, current time: 2022-11-18 21:15:53.558403+00:00
+[2022-11-19 00:15:53,559: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-19 00:15:56,293: INFO/ForkPoolWorker-7] Task update_shares[f36ecbac-8dfc-46c8-be08-6d15f2ea04ee] succeeded in 4.631381137995049s: None
+[2022-11-19 00:16:51,682: INFO/MainProcess] Task update_shares[dfa95f0d-66a7-446e-9196-c982db98cf64] received
+[2022-11-19 00:16:51,686: INFO/ForkPoolWorker-7] Task update_shares[dfa95f0d-66a7-446e-9196-c982db98cf64] succeeded in 0.0024563450133427978s: None
+[2022-11-19 00:17:51,732: INFO/MainProcess] Task update_shares[39031cc5-fbfd-4f97-a26f-46df262a4746] received
+[2022-11-19 00:17:51,737: INFO/ForkPoolWorker-7] Task update_shares[39031cc5-fbfd-4f97-a26f-46df262a4746] succeeded in 0.0028575860196724534s: None
+[2022-11-19 00:18:51,783: INFO/MainProcess] Task update_shares[7f77e092-24f3-40eb-8cd6-16188a0e6c56] received
+[2022-11-19 00:18:54,145: WARNING/ForkPoolWorker-7] victorclutes@gmail.com
+[2022-11-19 00:18:54,145: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-19 00:18:54,145: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:18:54,145: WARNING/ForkPoolWorker-7] META
+[2022-11-19 00:18:54,145: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-19 00:18:54,145: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:18:54,146: WARNING/ForkPoolWorker-7] 112.05
+[2022-11-19 00:18:54,146: WARNING/ForkPoolWorker-7] Current value of stock: 112.05, high value of tunnel: 100, current time: 2022-11-18 21:18:54.146423+00:00
+[2022-11-19 00:18:54,148: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-19 00:18:57,168: INFO/ForkPoolWorker-7] Task update_shares[7f77e092-24f3-40eb-8cd6-16188a0e6c56] succeeded in 5.383734698989429s: None
+[2022-11-19 00:19:51,832: INFO/MainProcess] Task update_shares[bf835c70-5e1d-4f92-a3cf-3e9d827ada62] received
+[2022-11-19 00:19:53,892: WARNING/ForkPoolWorker-7] victorclutes@gmail.com
+[2022-11-19 00:19:53,893: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-19 00:19:53,893: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:19:53,893: WARNING/ForkPoolWorker-7] twtr
+[2022-11-19 00:19:53,893: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-19 00:19:53,893: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:19:53,893: WARNING/ForkPoolWorker-7] 53.7
+[2022-11-19 00:19:53,893: WARNING/ForkPoolWorker-7] Current value of stock: 53.7, high value of tunnel: 100, current time: 2022-11-18 21:19:53.893330+00:00
+[2022-11-19 00:19:53,895: INFO/ForkPoolWorker-7] Task update_shares[bf835c70-5e1d-4f92-a3cf-3e9d827ada62] succeeded in 2.061066937050782s: None
+[2022-11-19 00:20:51,861: INFO/MainProcess] Task update_shares[cd6af85d-834c-48d8-9e4b-5a9db889730e] received
+[2022-11-19 00:20:51,865: INFO/ForkPoolWorker-7] Task update_shares[cd6af85d-834c-48d8-9e4b-5a9db889730e] succeeded in 0.002695831935852766s: None
+[2022-11-19 00:21:51,907: INFO/MainProcess] Task update_shares[5fc8e480-1258-4dbd-8762-983ae67ba226] received
+[2022-11-19 00:21:51,909: INFO/ForkPoolWorker-7] Task update_shares[5fc8e480-1258-4dbd-8762-983ae67ba226] succeeded in 0.0018786800792440772s: None
+[2022-11-19 00:22:51,931: INFO/MainProcess] Task update_shares[0d313b81-dc01-4cf3-8e2e-27d22d41fc38] received
+[2022-11-19 00:22:54,059: WARNING/ForkPoolWorker-7] victorclutes@gmail.com
+[2022-11-19 00:22:54,059: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-19 00:22:54,059: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:22:54,059: WARNING/ForkPoolWorker-7] META
+[2022-11-19 00:22:54,059: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-19 00:22:54,059: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:22:54,059: WARNING/ForkPoolWorker-7] 112.05
+[2022-11-19 00:22:54,059: WARNING/ForkPoolWorker-7] Current value of stock: 112.05, high value of tunnel: 100, current time: 2022-11-18 21:22:54.059727+00:00
+[2022-11-19 00:22:54,060: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-19 00:22:57,006: INFO/ForkPoolWorker-7] Task update_shares[0d313b81-dc01-4cf3-8e2e-27d22d41fc38] succeeded in 5.073286967002787s: None
+[2022-11-19 00:23:51,952: INFO/MainProcess] Task update_shares[22e1b6e6-5634-43ab-a11b-523dd5227dda] received
+[2022-11-19 00:23:51,957: INFO/ForkPoolWorker-7] Task update_shares[22e1b6e6-5634-43ab-a11b-523dd5227dda] succeeded in 0.0026647510239854455s: None
+[2022-11-19 00:24:51,952: INFO/MainProcess] Task update_shares[772621d5-1c90-48ef-a44b-a7b9993a0040] received
+[2022-11-19 00:24:51,956: INFO/ForkPoolWorker-7] Task update_shares[772621d5-1c90-48ef-a44b-a7b9993a0040] succeeded in 0.003159091924317181s: None
+[2022-11-19 00:25:51,972: INFO/MainProcess] Task update_shares[64f43eae-61b6-4f49-8caf-4c26dfd1a6da] received
+[2022-11-19 00:25:54,440: WARNING/ForkPoolWorker-7] victorclutes@gmail.com
+[2022-11-19 00:25:54,440: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-19 00:25:54,440: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:25:54,440: WARNING/ForkPoolWorker-7] TSLA
+[2022-11-19 00:25:54,440: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-19 00:25:54,440: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:25:54,440: WARNING/ForkPoolWorker-7] 180.19
+[2022-11-19 00:25:54,440: WARNING/ForkPoolWorker-7] Current value of stock: 180.19, high value of tunnel: 100, current time: 2022-11-18 21:25:54.440894+00:00
+[2022-11-19 00:25:54,441: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-19 00:25:59,254: WARNING/ForkPoolWorker-7] victorclutes@gmail.com
+[2022-11-19 00:25:59,254: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-19 00:25:59,255: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:25:59,255: WARNING/ForkPoolWorker-7] META
+[2022-11-19 00:25:59,255: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-19 00:25:59,255: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:25:59,255: WARNING/ForkPoolWorker-7] 112.05
+[2022-11-19 00:25:59,255: WARNING/ForkPoolWorker-7] Current value of stock: 112.05, high value of tunnel: 100, current time: 2022-11-18 21:25:59.255366+00:00
+[2022-11-19 00:25:59,256: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-19 00:26:02,125: INFO/ForkPoolWorker-7] Task update_shares[64f43eae-61b6-4f49-8caf-4c26dfd1a6da] succeeded in 10.150970679009333s: None
+[2022-11-19 00:26:52,020: INFO/MainProcess] Task update_shares[785d9fbe-8270-479d-9927-6fddccd8d1d1] received
+[2022-11-19 00:26:53,505: WARNING/ForkPoolWorker-7] victorclutes@gmail.com
+[2022-11-19 00:26:53,505: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-19 00:26:53,505: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:26:53,505: WARNING/ForkPoolWorker-7] META
+[2022-11-19 00:26:53,506: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-19 00:26:53,506: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:26:53,506: WARNING/ForkPoolWorker-7] 112.05
+[2022-11-19 00:26:53,506: WARNING/ForkPoolWorker-7] Current value of stock: 112.05, high value of tunnel: 100, current time: 2022-11-18 21:26:53.506262+00:00
+[2022-11-19 00:26:53,507: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-19 00:26:56,234: INFO/ForkPoolWorker-7] Task update_shares[785d9fbe-8270-479d-9927-6fddccd8d1d1] succeeded in 4.21306260896381s: None
+[2022-11-19 00:27:52,071: INFO/MainProcess] Task update_shares[b8754f6d-7d27-492d-b24b-074f8ee81670] received
+[2022-11-19 00:27:52,074: INFO/ForkPoolWorker-7] Task update_shares[b8754f6d-7d27-492d-b24b-074f8ee81670] succeeded in 0.0019615120254456997s: None
+[2022-11-19 00:28:52,074: INFO/MainProcess] Task update_shares[1172b2a1-94a3-4369-a88f-c0713f0ce6b3] received
+[2022-11-19 00:28:52,079: INFO/ForkPoolWorker-7] Task update_shares[1172b2a1-94a3-4369-a88f-c0713f0ce6b3] succeeded in 0.003659231006167829s: None
+[2022-11-19 00:29:52,124: INFO/MainProcess] Task update_shares[72a08ae0-a449-435f-9f3e-54a9abae2ef9] received
+[2022-11-19 00:29:54,262: WARNING/ForkPoolWorker-7] victorclutes@gmail.com
+[2022-11-19 00:29:54,262: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-19 00:29:54,262: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:29:54,263: WARNING/ForkPoolWorker-7] twtr
+[2022-11-19 00:29:54,263: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-19 00:29:54,263: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:29:54,263: WARNING/ForkPoolWorker-7] 53.7
+[2022-11-19 00:29:54,263: WARNING/ForkPoolWorker-7] Current value of stock: 53.7, high value of tunnel: 100, current time: 2022-11-18 21:29:54.263450+00:00
+[2022-11-19 00:29:56,548: WARNING/ForkPoolWorker-7] victorclutes@gmail.com
+[2022-11-19 00:29:56,549: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-19 00:29:56,549: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:29:56,549: WARNING/ForkPoolWorker-7] META
+[2022-11-19 00:29:56,549: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-19 00:29:56,549: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:29:56,549: WARNING/ForkPoolWorker-7] 112.05
+[2022-11-19 00:29:56,549: WARNING/ForkPoolWorker-7] Current value of stock: 112.05, high value of tunnel: 100, current time: 2022-11-18 21:29:56.549374+00:00
+[2022-11-19 00:29:56,550: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-19 00:29:59,803: INFO/ForkPoolWorker-7] Task update_shares[72a08ae0-a449-435f-9f3e-54a9abae2ef9] succeeded in 7.67719416890759s: None
+[2022-11-19 00:30:52,124: INFO/MainProcess] Task update_shares[73806e9b-a90f-4b73-8c65-e502173af698] received
+[2022-11-19 00:30:54,491: WARNING/ForkPoolWorker-7] victorclutes@gmail.com
+[2022-11-19 00:30:54,491: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-19 00:30:54,492: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:30:54,492: WARNING/ForkPoolWorker-7] META
+[2022-11-19 00:30:54,492: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-19 00:30:54,492: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:30:54,492: WARNING/ForkPoolWorker-7] 112.05
+[2022-11-19 00:30:54,492: WARNING/ForkPoolWorker-7] Current value of stock: 112.05, high value of tunnel: 100, current time: 2022-11-18 21:30:54.492316+00:00
+[2022-11-19 00:30:54,493: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-19 00:30:57,733: INFO/ForkPoolWorker-7] Task update_shares[73806e9b-a90f-4b73-8c65-e502173af698] succeeded in 5.608311739983037s: None
+[2022-11-19 00:31:52,125: INFO/MainProcess] Task update_shares[a4f6f663-ec86-459e-bd3a-e9323013877c] received
+[2022-11-19 00:31:52,130: INFO/ForkPoolWorker-7] Task update_shares[a4f6f663-ec86-459e-bd3a-e9323013877c] succeeded in 0.003968561068177223s: None
+[2022-11-19 00:32:52,170: INFO/MainProcess] Task update_shares[084ced82-9fd7-41f1-bcba-1fade7283dcf] received
+[2022-11-19 00:32:52,174: INFO/ForkPoolWorker-7] Task update_shares[084ced82-9fd7-41f1-bcba-1fade7283dcf] succeeded in 0.0025855499552562833s: None
+[2022-11-19 00:33:52,206: INFO/MainProcess] Task update_shares[71761457-03dc-4770-a601-bf1c22d68ca9] received
+[2022-11-19 00:33:52,210: INFO/ForkPoolWorker-7] Task update_shares[71761457-03dc-4770-a601-bf1c22d68ca9] succeeded in 0.003558587981387973s: None
+[2022-11-19 00:34:52,259: INFO/MainProcess] Task update_shares[b622543d-e369-4a5f-b17b-84c91fc94637] received
+[2022-11-19 00:34:54,385: WARNING/ForkPoolWorker-7] victorclutes@gmail.com
+[2022-11-19 00:34:54,385: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-19 00:34:54,385: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:34:54,385: WARNING/ForkPoolWorker-7] META
+[2022-11-19 00:34:54,385: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-19 00:34:54,385: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:34:54,385: WARNING/ForkPoolWorker-7] 112.05
+[2022-11-19 00:34:54,386: WARNING/ForkPoolWorker-7] Current value of stock: 112.05, high value of tunnel: 100, current time: 2022-11-18 21:34:54.385963+00:00
+[2022-11-19 00:34:54,386: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-19 00:34:57,403: INFO/ForkPoolWorker-7] Task update_shares[b622543d-e369-4a5f-b17b-84c91fc94637] succeeded in 5.142542387009598s: None
+[2022-11-19 00:35:52,260: INFO/MainProcess] Task update_shares[71e8a003-8645-4d8f-9f65-d49b12380a29] received
+[2022-11-19 00:35:54,452: WARNING/ForkPoolWorker-7] victorclutes@gmail.com
+[2022-11-19 00:35:54,453: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-19 00:35:54,453: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:35:54,453: WARNING/ForkPoolWorker-7] TSLA
+[2022-11-19 00:35:54,453: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-19 00:35:54,453: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:35:54,453: WARNING/ForkPoolWorker-7] 180.19
+[2022-11-19 00:35:54,453: WARNING/ForkPoolWorker-7] Current value of stock: 180.19, high value of tunnel: 100, current time: 2022-11-18 21:35:54.453548+00:00
+[2022-11-19 00:35:54,454: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-19 00:35:57,350: INFO/ForkPoolWorker-7] Task update_shares[71e8a003-8645-4d8f-9f65-d49b12380a29] succeeded in 5.088978759013116s: None
+[2022-11-19 00:36:52,273: INFO/MainProcess] Task update_shares[b8ef9df4-bcad-4080-8cf7-7e4306a93311] received
+[2022-11-19 00:36:52,278: INFO/ForkPoolWorker-7] Task update_shares[b8ef9df4-bcad-4080-8cf7-7e4306a93311] succeeded in 0.0036702650832012296s: None
+[2022-11-19 00:37:52,325: INFO/MainProcess] Task update_shares[060cee07-0f58-425e-8318-81e1a477490f] received
+[2022-11-19 00:37:52,330: INFO/ForkPoolWorker-7] Task update_shares[060cee07-0f58-425e-8318-81e1a477490f] succeeded in 0.004178366041742265s: None
+[2022-11-19 00:38:52,376: INFO/MainProcess] Task update_shares[a68150d7-9d2d-4c59-8801-e6a4291a74a1] received
+[2022-11-19 00:38:54,429: WARNING/ForkPoolWorker-7] victorclutes@gmail.com
+[2022-11-19 00:38:54,429: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-19 00:38:54,429: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:38:54,429: WARNING/ForkPoolWorker-7] META
+[2022-11-19 00:38:54,429: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-19 00:38:54,429: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:38:54,429: WARNING/ForkPoolWorker-7] 112.05
+[2022-11-19 00:38:54,429: WARNING/ForkPoolWorker-7] Current value of stock: 112.05, high value of tunnel: 100, current time: 2022-11-18 21:38:54.429676+00:00
+[2022-11-19 00:38:54,430: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-19 00:38:57,717: INFO/ForkPoolWorker-7] Task update_shares[a68150d7-9d2d-4c59-8801-e6a4291a74a1] succeeded in 5.339314967044629s: None
+[2022-11-19 00:39:52,426: INFO/MainProcess] Task update_shares[35fb3527-c64e-438f-931d-2162aac816cd] received
+[2022-11-19 00:39:54,446: WARNING/ForkPoolWorker-7] victorclutes@gmail.com
+[2022-11-19 00:39:54,446: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-19 00:39:54,446: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:39:54,446: WARNING/ForkPoolWorker-7] twtr
+[2022-11-19 00:39:54,446: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-19 00:39:54,446: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:39:54,446: WARNING/ForkPoolWorker-7] 53.7
+[2022-11-19 00:39:54,446: WARNING/ForkPoolWorker-7] Current value of stock: 53.7, high value of tunnel: 100, current time: 2022-11-18 21:39:54.446701+00:00
+[2022-11-19 00:39:54,449: INFO/ForkPoolWorker-7] Task update_shares[35fb3527-c64e-438f-931d-2162aac816cd] succeeded in 2.021113805938512s: None
+[2022-11-19 00:40:52,441: INFO/MainProcess] Task update_shares[3133ded1-d04c-40eb-bc15-10561677b835] received
+[2022-11-19 00:40:52,445: INFO/ForkPoolWorker-7] Task update_shares[3133ded1-d04c-40eb-bc15-10561677b835] succeeded in 0.003489083959721029s: None
+[2022-11-19 00:41:52,470: INFO/MainProcess] Task update_shares[5fee7e78-b222-4743-9fe3-7f0fd26530e5] received
+[2022-11-19 00:41:52,473: INFO/ForkPoolWorker-7] Task update_shares[5fee7e78-b222-4743-9fe3-7f0fd26530e5] succeeded in 0.0023945950670167804s: None
+[2022-11-19 00:42:52,471: INFO/MainProcess] Task update_shares[7ae1119f-891b-4413-a785-812db542efdd] received
+[2022-11-19 00:42:54,627: WARNING/ForkPoolWorker-7] victorclutes@gmail.com
+[2022-11-19 00:42:54,627: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-19 00:42:54,628: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:42:54,628: WARNING/ForkPoolWorker-7] META
+[2022-11-19 00:42:54,628: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-19 00:42:54,628: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:42:54,628: WARNING/ForkPoolWorker-7] 112.05
+[2022-11-19 00:42:54,628: WARNING/ForkPoolWorker-7] Current value of stock: 112.05, high value of tunnel: 100, current time: 2022-11-18 21:42:54.628894+00:00
+[2022-11-19 00:42:54,629: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-19 00:42:57,635: INFO/ForkPoolWorker-7] Task update_shares[7ae1119f-891b-4413-a785-812db542efdd] succeeded in 5.16243672510609s: None
+[2022-11-19 00:43:52,472: INFO/MainProcess] Task update_shares[1a6003ab-962a-4fde-8d6a-dff670f5cca7] received
+[2022-11-19 00:43:52,475: INFO/ForkPoolWorker-7] Task update_shares[1a6003ab-962a-4fde-8d6a-dff670f5cca7] succeeded in 0.002036307007074356s: None
+[2022-11-19 00:44:52,515: INFO/MainProcess] Task update_shares[c5d9916c-634a-4001-b2a4-58cdad1c9f6d] received
+[2022-11-19 00:44:52,519: INFO/ForkPoolWorker-7] Task update_shares[c5d9916c-634a-4001-b2a4-58cdad1c9f6d] succeeded in 0.00271111901383847s: None
+[2022-11-19 00:45:52,564: INFO/MainProcess] Task update_shares[d233fcf7-9c7a-4705-9e9e-57eacf049b97] received
+[2022-11-19 00:45:55,133: WARNING/ForkPoolWorker-7] victorclutes@gmail.com
+[2022-11-19 00:45:55,133: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-19 00:45:55,133: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:45:55,133: WARNING/ForkPoolWorker-7] TSLA
+[2022-11-19 00:45:55,133: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-19 00:45:55,133: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:45:55,133: WARNING/ForkPoolWorker-7] 180.19
+[2022-11-19 00:45:55,133: WARNING/ForkPoolWorker-7] Current value of stock: 180.19, high value of tunnel: 100, current time: 2022-11-18 21:45:55.133892+00:00
+[2022-11-19 00:45:55,134: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-19 00:46:00,080: WARNING/ForkPoolWorker-7] victorclutes@gmail.com
+[2022-11-19 00:46:00,080: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-19 00:46:00,080: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:46:00,080: WARNING/ForkPoolWorker-7] META
+[2022-11-19 00:46:00,081: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-19 00:46:00,081: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:46:00,081: WARNING/ForkPoolWorker-7] 112.05
+[2022-11-19 00:46:00,081: WARNING/ForkPoolWorker-7] Current value of stock: 112.05, high value of tunnel: 100, current time: 2022-11-18 21:46:00.081292+00:00
+[2022-11-19 00:46:00,082: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-19 00:46:02,785: INFO/ForkPoolWorker-7] Task update_shares[d233fcf7-9c7a-4705-9e9e-57eacf049b97] succeeded in 10.219782266067341s: None
+[2022-11-19 00:46:52,566: INFO/MainProcess] Task update_shares[5de4aacc-0966-4915-a921-380f00061270] received
+[2022-11-19 00:46:54,250: WARNING/ForkPoolWorker-7] victorclutes@gmail.com
+[2022-11-19 00:46:54,250: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-19 00:46:54,250: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:46:54,250: WARNING/ForkPoolWorker-7] META
+[2022-11-19 00:46:54,250: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-19 00:46:54,250: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:46:54,250: WARNING/ForkPoolWorker-7] 112.05
+[2022-11-19 00:46:54,250: WARNING/ForkPoolWorker-7] Current value of stock: 112.05, high value of tunnel: 100, current time: 2022-11-18 21:46:54.250686+00:00
+[2022-11-19 00:46:54,251: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-19 00:46:57,118: INFO/ForkPoolWorker-7] Task update_shares[5de4aacc-0966-4915-a921-380f00061270] succeeded in 4.551553027937189s: None
+[2022-11-19 00:47:52,617: INFO/MainProcess] Task update_shares[ae15eacc-52b1-4460-974e-bb626cee4d90] received
+[2022-11-19 00:47:52,620: INFO/ForkPoolWorker-7] Task update_shares[ae15eacc-52b1-4460-974e-bb626cee4d90] succeeded in 0.002148685045540333s: None
+[2022-11-19 00:48:52,645: INFO/MainProcess] Task update_shares[abe1aa7d-b7f6-47da-b0c9-677b0f2219f1] received
+[2022-11-19 00:48:52,650: INFO/ForkPoolWorker-7] Task update_shares[abe1aa7d-b7f6-47da-b0c9-677b0f2219f1] succeeded in 0.0026370889972895384s: None
+[2022-11-19 00:49:52,695: INFO/MainProcess] Task update_shares[ea6d5815-499f-4c0c-adb7-afdcd17f6b51] received
+[2022-11-19 00:49:55,249: WARNING/ForkPoolWorker-7] victorclutes@gmail.com
+[2022-11-19 00:49:55,249: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-19 00:49:55,249: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:49:55,250: WARNING/ForkPoolWorker-7] twtr
+[2022-11-19 00:49:55,250: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-19 00:49:55,250: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:49:55,250: WARNING/ForkPoolWorker-7] 53.7
+[2022-11-19 00:49:55,250: WARNING/ForkPoolWorker-7] Current value of stock: 53.7, high value of tunnel: 100, current time: 2022-11-18 21:49:55.250251+00:00
+[2022-11-19 00:49:57,368: WARNING/ForkPoolWorker-7] victorclutes@gmail.com
+[2022-11-19 00:49:57,368: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-19 00:49:57,368: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:49:57,369: WARNING/ForkPoolWorker-7] META
+[2022-11-19 00:49:57,369: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-19 00:49:57,369: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:49:57,369: WARNING/ForkPoolWorker-7] 112.05
+[2022-11-19 00:49:57,369: WARNING/ForkPoolWorker-7] Current value of stock: 112.05, high value of tunnel: 100, current time: 2022-11-18 21:49:57.369468+00:00
+[2022-11-19 00:49:57,370: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-19 00:50:00,355: INFO/ForkPoolWorker-7] Task update_shares[ea6d5815-499f-4c0c-adb7-afdcd17f6b51] succeeded in 7.65978714695666s: None
+[2022-11-19 00:50:52,746: INFO/MainProcess] Task update_shares[a8c6a8a5-7283-40f7-80c3-73a1e5d0c417] received
+[2022-11-19 00:50:52,750: INFO/ForkPoolWorker-7] Task update_shares[a8c6a8a5-7283-40f7-80c3-73a1e5d0c417] succeeded in 0.003249182947911322s: None
+[2022-11-19 00:51:52,799: INFO/MainProcess] Task update_shares[f039d5df-d60a-49b7-a125-e984dff6d889] received
+[2022-11-19 00:51:52,804: INFO/ForkPoolWorker-7] Task update_shares[f039d5df-d60a-49b7-a125-e984dff6d889] succeeded in 0.0025787720223888755s: None
+[2022-11-19 00:52:52,850: INFO/MainProcess] Task update_shares[d5f53131-5860-4d86-8a0f-aee743d8490a] received
+[2022-11-19 00:52:52,853: INFO/ForkPoolWorker-7] Task update_shares[d5f53131-5860-4d86-8a0f-aee743d8490a] succeeded in 0.0018352349288761616s: None
+[2022-11-19 00:53:52,897: INFO/MainProcess] Task update_shares[eeecf677-d520-4fd2-ad9c-a3c758a6beec] received
+[2022-11-19 00:53:55,195: WARNING/ForkPoolWorker-7] victorclutes@gmail.com
+[2022-11-19 00:53:55,195: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-19 00:53:55,195: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:53:55,195: WARNING/ForkPoolWorker-7] META
+[2022-11-19 00:53:55,195: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-19 00:53:55,195: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:53:55,196: WARNING/ForkPoolWorker-7] 112.05
+[2022-11-19 00:53:55,196: WARNING/ForkPoolWorker-7] Current value of stock: 112.05, high value of tunnel: 100, current time: 2022-11-18 21:53:55.196080+00:00
+[2022-11-19 00:53:55,197: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-19 00:53:58,073: INFO/ForkPoolWorker-7] Task update_shares[eeecf677-d520-4fd2-ad9c-a3c758a6beec] succeeded in 5.175359410000965s: None
+[2022-11-19 00:54:52,949: INFO/MainProcess] Task update_shares[e35e76a6-dce4-421a-b20d-b7db3d9934ce] received
+[2022-11-19 00:54:52,954: INFO/ForkPoolWorker-7] Task update_shares[e35e76a6-dce4-421a-b20d-b7db3d9934ce] succeeded in 0.0038169299950823188s: None
+[2022-11-19 00:55:52,955: INFO/MainProcess] Task update_shares[001f1ac3-b6e0-4d7b-9e91-ffee80e0e543] received
+[2022-11-19 00:55:55,058: WARNING/ForkPoolWorker-7] victorclutes@gmail.com
+[2022-11-19 00:55:55,059: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-19 00:55:55,059: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:55:55,059: WARNING/ForkPoolWorker-7] TSLA
+[2022-11-19 00:55:55,059: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-19 00:55:55,059: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:55:55,059: WARNING/ForkPoolWorker-7] 180.19
+[2022-11-19 00:55:55,059: WARNING/ForkPoolWorker-7] Current value of stock: 180.19, high value of tunnel: 100, current time: 2022-11-18 21:55:55.059605+00:00
+[2022-11-19 00:55:55,061: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-19 00:55:57,871: INFO/ForkPoolWorker-7] Task update_shares[001f1ac3-b6e0-4d7b-9e91-ffee80e0e543] succeeded in 4.915431420900859s: None
+[2022-11-19 00:56:52,977: INFO/MainProcess] Task update_shares[38d5a218-8269-490d-8655-a44f00ca2b11] received
+[2022-11-19 00:56:52,982: INFO/ForkPoolWorker-7] Task update_shares[38d5a218-8269-490d-8655-a44f00ca2b11] succeeded in 0.0037953490391373634s: None
+[2022-11-19 00:57:53,004: INFO/MainProcess] Task update_shares[ffcb6c75-cffa-4350-9ab6-931c01cd255a] received
+[2022-11-19 00:57:54,782: WARNING/ForkPoolWorker-7] victorclutes@gmail.com
+[2022-11-19 00:57:54,783: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-19 00:57:54,783: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:57:54,783: WARNING/ForkPoolWorker-7] META
+[2022-11-19 00:57:54,783: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-19 00:57:54,783: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:57:54,783: WARNING/ForkPoolWorker-7] 112.05
+[2022-11-19 00:57:54,783: WARNING/ForkPoolWorker-7] Current value of stock: 112.05, high value of tunnel: 100, current time: 2022-11-18 21:57:54.783721+00:00
+[2022-11-19 00:57:54,785: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-19 00:57:58,264: INFO/ForkPoolWorker-7] Task update_shares[ffcb6c75-cffa-4350-9ab6-931c01cd255a] succeeded in 5.25854879792314s: None
+[2022-11-19 00:58:53,054: INFO/MainProcess] Task update_shares[645a16ac-28cb-4339-97ed-43604f24c7bb] received
+[2022-11-19 00:58:53,059: INFO/ForkPoolWorker-7] Task update_shares[645a16ac-28cb-4339-97ed-43604f24c7bb] succeeded in 0.003423789981752634s: None
+[2022-11-19 00:59:53,104: INFO/MainProcess] Task update_shares[70c668d3-0c90-4e1e-b758-fc341730cb64] received
+[2022-11-19 00:59:55,577: WARNING/ForkPoolWorker-7] victorclutes@gmail.com
+[2022-11-19 00:59:55,578: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-19 00:59:55,578: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:59:55,578: WARNING/ForkPoolWorker-7] twtr
+[2022-11-19 00:59:55,578: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-19 00:59:55,578: WARNING/ForkPoolWorker-7]  
+[2022-11-19 00:59:55,578: WARNING/ForkPoolWorker-7] 53.7
+[2022-11-19 00:59:55,578: WARNING/ForkPoolWorker-7] Current value of stock: 53.7, high value of tunnel: 100, current time: 2022-11-18 21:59:55.578960+00:00
+[2022-11-19 00:59:55,580: INFO/ForkPoolWorker-7] Task update_shares[70c668d3-0c90-4e1e-b758-fc341730cb64] succeeded in 2.474270676029846s: None
+[2022-11-19 01:00:53,117: INFO/MainProcess] Task update_shares[7b5a56d4-9978-4b77-89af-126b0c82c453] received
+[2022-11-19 01:00:53,122: INFO/ForkPoolWorker-7] Task update_shares[7b5a56d4-9978-4b77-89af-126b0c82c453] succeeded in 0.003931122017093003s: None
+[2022-11-19 01:01:53,150: INFO/MainProcess] Task update_shares[ded77c1f-05b2-4278-a7c3-3aaa4fcac4a5] received
+[2022-11-19 01:01:55,293: WARNING/ForkPoolWorker-7] victorclutes@gmail.com
+[2022-11-19 01:01:55,293: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-19 01:01:55,294: WARNING/ForkPoolWorker-7]  
+[2022-11-19 01:01:55,294: WARNING/ForkPoolWorker-7] META
+[2022-11-19 01:01:55,294: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-19 01:01:55,294: WARNING/ForkPoolWorker-7]  
+[2022-11-19 01:01:55,294: WARNING/ForkPoolWorker-7] 112.05
+[2022-11-19 01:01:55,294: WARNING/ForkPoolWorker-7] Current value of stock: 112.05, high value of tunnel: 100, current time: 2022-11-18 22:01:55.294497+00:00
+[2022-11-19 01:01:55,295: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-19 01:01:58,723: INFO/ForkPoolWorker-7] Task update_shares[ded77c1f-05b2-4278-a7c3-3aaa4fcac4a5] succeeded in 5.571525639039464s: None
+[2022-11-19 01:02:53,172: INFO/MainProcess] Task update_shares[382fe58d-1114-4d28-97a4-516bf451729a] received
+[2022-11-19 01:02:53,175: INFO/ForkPoolWorker-7] Task update_shares[382fe58d-1114-4d28-97a4-516bf451729a] succeeded in 0.0023212659871205688s: None
+[2022-11-19 01:03:53,223: INFO/MainProcess] Task update_shares[9cf916a2-aba4-47c0-9acb-fc4a4ddaae8e] received
+[2022-11-19 01:03:53,227: INFO/ForkPoolWorker-7] Task update_shares[9cf916a2-aba4-47c0-9acb-fc4a4ddaae8e] succeeded in 0.0025587279815226793s: None
+[2022-11-19 01:04:53,270: INFO/MainProcess] Task update_shares[14cf7dee-c446-4148-aae2-c304ee60a3aa] received
+[2022-11-19 01:04:54,776: WARNING/ForkPoolWorker-7] victorclutes@gmail.com
+[2022-11-19 01:04:54,777: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-19 01:04:54,777: WARNING/ForkPoolWorker-7]  
+[2022-11-19 01:04:54,777: WARNING/ForkPoolWorker-7] AAPL
+[2022-11-19 01:04:54,777: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-19 01:04:54,777: WARNING/ForkPoolWorker-7]  
+[2022-11-19 01:04:54,777: WARNING/ForkPoolWorker-7] 151.29
+[2022-11-19 01:04:54,777: WARNING/ForkPoolWorker-7] Current value of stock: 151.29, high value of tunnel: 160, current time: 2022-11-18 22:04:54.777273+00:00
+[2022-11-19 01:04:54,779: INFO/ForkPoolWorker-7] Task update_shares[14cf7dee-c446-4148-aae2-c304ee60a3aa] succeeded in 1.5081899460637942s: None
+[2022-11-19 01:05:53,294: INFO/MainProcess] Task update_shares[08c14181-b0e0-4f06-a92e-906a01abe42f] received
+[2022-11-19 01:05:55,111: WARNING/ForkPoolWorker-7] victorclutes@gmail.com
+[2022-11-19 01:05:55,112: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-19 01:05:55,112: WARNING/ForkPoolWorker-7]  
+[2022-11-19 01:05:55,112: WARNING/ForkPoolWorker-7] TSLA
+[2022-11-19 01:05:55,112: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-19 01:05:55,112: WARNING/ForkPoolWorker-7]  
+[2022-11-19 01:05:55,112: WARNING/ForkPoolWorker-7] 180.19
+[2022-11-19 01:05:55,112: WARNING/ForkPoolWorker-7] Current value of stock: 180.19, high value of tunnel: 100, current time: 2022-11-18 22:05:55.112515+00:00
+[2022-11-19 01:05:55,113: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-19 01:05:59,928: WARNING/ForkPoolWorker-7] victorclutes@gmail.com
+[2022-11-19 01:05:59,928: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-19 01:05:59,928: WARNING/ForkPoolWorker-7]  
+[2022-11-19 01:05:59,928: WARNING/ForkPoolWorker-7] META
+[2022-11-19 01:05:59,928: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-19 01:05:59,928: WARNING/ForkPoolWorker-7]  
+[2022-11-19 01:05:59,928: WARNING/ForkPoolWorker-7] 112.05
+[2022-11-19 01:05:59,928: WARNING/ForkPoolWorker-7] Current value of stock: 112.05, high value of tunnel: 100, current time: 2022-11-18 22:05:59.928781+00:00
+[2022-11-19 01:05:59,929: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-19 01:06:03,242: INFO/ForkPoolWorker-7] Task update_shares[08c14181-b0e0-4f06-a92e-906a01abe42f] succeeded in 9.946687848074362s: None
+[2022-11-19 01:06:53,343: INFO/MainProcess] Task update_shares[fb6eb64b-d01c-45e6-9e0b-f3bf42f80f2e] received
+[2022-11-19 01:06:53,347: INFO/ForkPoolWorker-7] Task update_shares[fb6eb64b-d01c-45e6-9e0b-f3bf42f80f2e] succeeded in 0.002295005018822849s: None
+[2022-11-19 01:07:53,395: INFO/MainProcess] Task update_shares[04e64d4a-3918-4f7b-b29d-1ac83b03fbab] received
+[2022-11-19 01:07:53,398: INFO/ForkPoolWorker-7] Task update_shares[04e64d4a-3918-4f7b-b29d-1ac83b03fbab] succeeded in 0.0021225661039352417s: None
+[2022-11-19 01:08:53,443: INFO/MainProcess] Task update_shares[608e653a-1f80-49c6-bbc8-9fb788682f83] received
+[2022-11-19 01:08:53,447: INFO/ForkPoolWorker-7] Task update_shares[608e653a-1f80-49c6-bbc8-9fb788682f83] succeeded in 0.0022223700070753694s: None
+[2022-11-19 01:09:53,493: INFO/MainProcess] Task update_shares[2b30e5ed-31c8-4a17-801a-d2256f484cf2] received
+[2022-11-19 01:09:55,525: WARNING/ForkPoolWorker-7] victorclutes@gmail.com
+[2022-11-19 01:09:55,525: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-19 01:09:55,525: WARNING/ForkPoolWorker-7]  
+[2022-11-19 01:09:55,525: WARNING/ForkPoolWorker-7] twtr
+[2022-11-19 01:09:55,525: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-19 01:09:55,526: WARNING/ForkPoolWorker-7]  
+[2022-11-19 01:09:55,526: WARNING/ForkPoolWorker-7] 53.7
+[2022-11-19 01:09:55,526: WARNING/ForkPoolWorker-7] Current value of stock: 53.7, high value of tunnel: 100, current time: 2022-11-18 22:09:55.526511+00:00
+[2022-11-19 01:09:57,667: WARNING/ForkPoolWorker-7] victorclutes@gmail.com
+[2022-11-19 01:09:57,667: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-19 01:09:57,667: WARNING/ForkPoolWorker-7]  
+[2022-11-19 01:09:57,667: WARNING/ForkPoolWorker-7] META
+[2022-11-19 01:09:57,667: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-19 01:09:57,668: WARNING/ForkPoolWorker-7]  
+[2022-11-19 01:09:57,668: WARNING/ForkPoolWorker-7] 112.05
+[2022-11-19 01:09:57,668: WARNING/ForkPoolWorker-7] Current value of stock: 112.05, high value of tunnel: 100, current time: 2022-11-18 22:09:57.668245+00:00
+[2022-11-19 01:09:57,669: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-19 01:10:00,502: INFO/ForkPoolWorker-7] Task update_shares[2b30e5ed-31c8-4a17-801a-d2256f484cf2] succeeded in 7.007288821041584s: None
+[2022-11-19 01:10:53,549: INFO/MainProcess] Task update_shares[25183582-2664-4825-bb27-ec0ed1bbfb0c] received
+[2022-11-19 01:10:53,552: INFO/ForkPoolWorker-7] Task update_shares[25183582-2664-4825-bb27-ec0ed1bbfb0c] succeeded in 0.002606641035526991s: None
+[2022-11-19 01:11:53,599: INFO/MainProcess] Task update_shares[3b148a11-03a5-4073-8b18-e1aae81c5921] received
+[2022-11-19 01:11:53,603: INFO/ForkPoolWorker-7] Task update_shares[3b148a11-03a5-4073-8b18-e1aae81c5921] succeeded in 0.002970027970150113s: None
+[2022-11-19 01:12:53,610: INFO/MainProcess] Task update_shares[1b46ce50-5748-4211-a7a4-2fcc9f8ff8d2] received
+[2022-11-19 01:12:53,613: INFO/ForkPoolWorker-7] Task update_shares[1b46ce50-5748-4211-a7a4-2fcc9f8ff8d2] succeeded in 0.002573534962721169s: None
+[2022-11-19 01:13:53,644: INFO/MainProcess] Task update_shares[f179529e-39c8-4c9e-bd1b-907b8a9b180e] received
+[2022-11-19 01:13:55,456: WARNING/ForkPoolWorker-7] victorclutes@gmail.com
+[2022-11-19 01:13:55,457: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-19 01:13:55,457: WARNING/ForkPoolWorker-7]  
+[2022-11-19 01:13:55,457: WARNING/ForkPoolWorker-7] META
+[2022-11-19 01:13:55,457: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-19 01:13:55,457: WARNING/ForkPoolWorker-7]  
+[2022-11-19 01:13:55,457: WARNING/ForkPoolWorker-7] 112.05
+[2022-11-19 01:13:55,457: WARNING/ForkPoolWorker-7] Current value of stock: 112.05, high value of tunnel: 100, current time: 2022-11-18 22:13:55.457284+00:00
+[2022-11-19 01:13:55,458: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-19 01:13:58,630: INFO/ForkPoolWorker-7] Task update_shares[f179529e-39c8-4c9e-bd1b-907b8a9b180e] succeeded in 4.984613127075136s: None
+[2022-11-19 01:14:53,662: INFO/MainProcess] Task update_shares[3edf94b6-f06b-4b9c-acde-da24f5ea3302] received
+[2022-11-19 01:14:53,667: INFO/ForkPoolWorker-7] Task update_shares[3edf94b6-f06b-4b9c-acde-da24f5ea3302] succeeded in 0.0034068169770762324s: None
+[2022-11-19 01:15:53,694: INFO/MainProcess] Task update_shares[76dc862e-44e3-469b-b095-7be36ad23e70] received
+[2022-11-19 01:15:55,613: WARNING/ForkPoolWorker-7] victorclutes@gmail.com
+[2022-11-19 01:15:55,613: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-19 01:15:55,614: WARNING/ForkPoolWorker-7]  
+[2022-11-19 01:15:55,614: WARNING/ForkPoolWorker-7] TSLA
+[2022-11-19 01:15:55,614: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-19 01:15:55,615: WARNING/ForkPoolWorker-7]  
+[2022-11-19 01:15:55,615: WARNING/ForkPoolWorker-7] 180.19
+[2022-11-19 01:15:55,615: WARNING/ForkPoolWorker-7] Current value of stock: 180.19, high value of tunnel: 100, current time: 2022-11-18 22:15:55.615895+00:00
+[2022-11-19 01:15:55,617: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-19 01:15:58,702: INFO/ForkPoolWorker-7] Task update_shares[76dc862e-44e3-469b-b095-7be36ad23e70] succeeded in 5.006383105064742s: None
+[2022-11-19 01:16:53,696: INFO/MainProcess] Task update_shares[9ca9a272-cab4-4ce7-9fe4-60f92847b26a] received
+[2022-11-19 01:16:53,700: INFO/ForkPoolWorker-7] Task update_shares[9ca9a272-cab4-4ce7-9fe4-60f92847b26a] succeeded in 0.0021942929597571492s: None
+[2022-11-19 01:17:53,743: INFO/MainProcess] Task update_shares[84569c58-29bf-4180-9719-11ce848b8fd9] received
+[2022-11-19 01:17:56,222: WARNING/ForkPoolWorker-7] victorclutes@gmail.com
+[2022-11-19 01:17:56,223: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-19 01:17:56,223: WARNING/ForkPoolWorker-7]  
+[2022-11-19 01:17:56,223: WARNING/ForkPoolWorker-7] META
+[2022-11-19 01:17:56,223: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-19 01:17:56,223: WARNING/ForkPoolWorker-7]  
+[2022-11-19 01:17:56,223: WARNING/ForkPoolWorker-7] 112.05
+[2022-11-19 01:17:56,223: WARNING/ForkPoolWorker-7] Current value of stock: 112.05, high value of tunnel: 100, current time: 2022-11-18 22:17:56.223447+00:00
+[2022-11-19 01:17:56,224: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-19 01:17:59,469: INFO/ForkPoolWorker-7] Task update_shares[84569c58-29bf-4180-9719-11ce848b8fd9] succeeded in 5.724061051034369s: None
+[2022-11-19 01:18:53,758: INFO/MainProcess] Task update_shares[06960edd-70d3-43b8-b767-164c42037675] received
+[2022-11-19 01:18:56,255: WARNING/ForkPoolWorker-7] victorclutes@gmail.com
+[2022-11-19 01:18:56,255: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-19 01:18:56,255: WARNING/ForkPoolWorker-7]  
+[2022-11-19 01:18:56,255: WARNING/ForkPoolWorker-7] twtr
+[2022-11-19 01:18:56,255: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-19 01:18:56,255: WARNING/ForkPoolWorker-7]  
+[2022-11-19 01:18:56,255: WARNING/ForkPoolWorker-7] 53.7
+[2022-11-19 01:18:56,256: WARNING/ForkPoolWorker-7] Current value of stock: 53.7, high value of tunnel: 100, current time: 2022-11-18 22:18:56.256067+00:00
+[2022-11-19 01:18:56,258: INFO/ForkPoolWorker-7] Task update_shares[06960edd-70d3-43b8-b767-164c42037675] succeeded in 2.498853045050055s: None
+[2022-11-19 01:19:53,809: INFO/MainProcess] Task update_shares[2d21d6e5-c252-4b96-b324-1d2c9624f64f] received
+[2022-11-19 01:19:53,814: INFO/ForkPoolWorker-7] Task update_shares[2d21d6e5-c252-4b96-b324-1d2c9624f64f] succeeded in 0.003710770048201084s: None
+[2022-11-19 01:20:53,858: INFO/MainProcess] Task update_shares[d07419d9-5f4a-47ba-97f5-34e61987ba52] received
+[2022-11-19 01:20:53,860: INFO/ForkPoolWorker-7] Task update_shares[d07419d9-5f4a-47ba-97f5-34e61987ba52] succeeded in 0.0016107639530673623s: None
+[2022-11-19 01:21:53,907: INFO/MainProcess] Task update_shares[c40104b8-88ab-4ac8-8082-3bac061fac4a] received
+[2022-11-19 01:21:55,759: WARNING/ForkPoolWorker-7] victorclutes@gmail.com
+[2022-11-19 01:21:55,759: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-19 01:21:55,759: WARNING/ForkPoolWorker-7]  
+[2022-11-19 01:21:55,759: WARNING/ForkPoolWorker-7] META
+[2022-11-19 01:21:55,759: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-19 01:21:55,759: WARNING/ForkPoolWorker-7]  
+[2022-11-19 01:21:55,759: WARNING/ForkPoolWorker-7] 112.05
+[2022-11-19 01:21:55,759: WARNING/ForkPoolWorker-7] Current value of stock: 112.05, high value of tunnel: 100, current time: 2022-11-18 22:21:55.759653+00:00
+[2022-11-19 01:21:55,760: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-19 01:21:58,640: INFO/ForkPoolWorker-7] Task update_shares[c40104b8-88ab-4ac8-8082-3bac061fac4a] succeeded in 4.731817018939182s: None
+[2022-11-19 01:22:53,959: INFO/MainProcess] Task update_shares[28b747c1-e0b1-4a24-8256-7637d67bc78d] received
+[2022-11-19 01:22:53,963: INFO/ForkPoolWorker-7] Task update_shares[28b747c1-e0b1-4a24-8256-7637d67bc78d] succeeded in 0.002508093020878732s: None
+[2022-11-19 01:23:53,962: INFO/MainProcess] Task update_shares[9382c3e5-3151-442d-9c63-c4bd7aebfc19] received
+[2022-11-19 01:23:53,968: INFO/ForkPoolWorker-7] Task update_shares[9382c3e5-3151-442d-9c63-c4bd7aebfc19] succeeded in 0.00421202601864934s: None

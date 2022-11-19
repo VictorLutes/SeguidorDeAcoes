@@ -18,13 +18,7 @@ def listItems(request):
         form=StockForm(request.POST)
         if form.is_valid():
             form.save()
-            redirect('/follows/')
-    elif request.method=='PUT':
-        print(request.PUT)
-        form=RecipientForm(request.PUT)
-        if form.is_valid():
-            form.save()
-            redirect('/follows/')
+            return redirect('/follows/')
     return render(request, 'listItems.html', context)
 
 def update_stock(request, pk):
@@ -39,7 +33,7 @@ def update_stock(request, pk):
         form=StockForm(request.POST, instance=latest_stock)
         if form.is_valid():
             form.save()
-            redirect('/follows')
+            return redirect('/follows')
     return render(request, 'formUpdate.html', context)
 
 def delete_stock(request, pk):
@@ -50,7 +44,7 @@ def delete_stock(request, pk):
     if request.method=='POST':
         stock.delete()
         print(request.POST)
-        redirect('/follows')
+        return redirect('/follows')
     return render(request, 'confirmDelete.html', context)
 
 
@@ -62,7 +56,7 @@ def delete_email(request, pk):
     if request.method=='POST':
         email.delete()
         print(request.POST)
-        redirect('/follows')
+        return redirect('/follows')
     return render(request, 'confirmDelete.html', context)
 
 def add_recipient(request):
@@ -75,5 +69,5 @@ def add_recipient(request):
         form=RecipientForm(request.POST)
         if form.is_valid():
             form.save()
-            redirect('/follows')
+            return redirect('/follows')
     return render(request, 'addEmail.html', context)

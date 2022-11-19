@@ -11,17 +11,15 @@
             <th>Delete</th>
         </tr>
         {% for stock in stock_list %}
-            <form action="" method="POST">
-                <tr>
-                    <td>{{stock.sigla}}</td>
-                    <td>{{stock.low}}</td>
-                    <td>{{stock.high}}</td>
-                    <td>{{stock.currentPrice}}</td>
-                    <td>{{stock.minutes}}</td>
-                    <td><a href="{% url 'update_stock' stock.id %}">Update</a></td>
-                    <td><a href="{% url 'delete_stock' stock.id %}">Delete</a></td>
-                </tr>
-            </form>
+            <tr>
+                <td>{{stock.sigla}}</td>
+                <td>{{stock.low}}</td>
+                <td>{{stock.high}}</td>
+                <td>{{stock.currentPrice}}</td>
+                <td>{{stock.minutes}}</td>
+                <td><a href="{% url 'update_stock' stock.id %}">Update</a></td>
+                <td><a href="{% url 'delete_stock' stock.id %}">Delete</a></td>
+            </tr>
         {% endfor %}
     </table>
     {% else %}
