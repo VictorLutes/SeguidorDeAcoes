@@ -25592,3 +25592,141 @@ ZeroDivisionError: integer division or modulo by zero
 [2022-11-19 01:26:55,976: WARNING/ForkPoolWorker-7] 53.7
 [2022-11-19 01:26:55,977: WARNING/ForkPoolWorker-7] Current value of stock: 0.0, high value of tunnel: 100, current time: 2022-11-18 22:26:55.977005+00:00
 [2022-11-19 01:26:55,985: INFO/ForkPoolWorker-7] Task update_shares[a24c1162-2fd2-4257-afe3-f2eed161411c] succeeded in 1.886505385977216s: None
+[2022-11-19 03:17:05,419: INFO/MainProcess] Connected to redis://localhost:6379//
+[2022-11-19 03:17:05,423: INFO/MainProcess] mingle: searching for neighbors
+[2022-11-19 03:17:06,430: INFO/MainProcess] mingle: all alone
+[2022-11-19 03:17:06,444: WARNING/MainProcess] /home/victor/.local/lib/python3.10/site-packages/celery/fixups/django.py:203: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+
+[2022-11-19 03:17:06,444: INFO/MainProcess] celery@victor ready.
+[2022-11-19 03:17:06,459: INFO/MainProcess] Task update_shares[2e28db3b-194a-4979-87ca-2c737f2966be] received
+[2022-11-19 03:17:06,466: ERROR/ForkPoolWorker-7] Task update_shares[2e28db3b-194a-4979-87ca-2c737f2966be] raised unexpected: AttributeError("'QuerySet' object has no attribute 'email'")
+Traceback (most recent call last):
+  File "/home/victor/.local/lib/python3.10/site-packages/celery/app/trace.py", line 451, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/victor/.local/lib/python3.10/site-packages/celery/app/trace.py", line 734, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/victor/Documents/DesafioAlfa/followShares/follows/tasks.py", line 15, in update_shares
+    recipient.append(queries.email)
+AttributeError: 'QuerySet' object has no attribute 'email'
+[2022-11-19 03:18:04,536: INFO/MainProcess] Task update_shares[cff9ba48-68a2-4904-9871-ab2a8caf4a47] received
+[2022-11-19 03:18:04,539: ERROR/ForkPoolWorker-7] Task update_shares[cff9ba48-68a2-4904-9871-ab2a8caf4a47] raised unexpected: AttributeError("'QuerySet' object has no attribute 'email'")
+Traceback (most recent call last):
+  File "/home/victor/.local/lib/python3.10/site-packages/celery/app/trace.py", line 451, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/victor/.local/lib/python3.10/site-packages/celery/app/trace.py", line 734, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/victor/Documents/DesafioAlfa/followShares/follows/tasks.py", line 15, in update_shares
+    recipient.append(queries.email)
+AttributeError: 'QuerySet' object has no attribute 'email'
+[2022-11-19 03:44:18,193: INFO/MainProcess] Connected to redis://localhost:6379//
+[2022-11-19 03:44:18,196: INFO/MainProcess] mingle: searching for neighbors
+[2022-11-19 03:44:19,203: INFO/MainProcess] mingle: all alone
+[2022-11-19 03:44:19,215: WARNING/MainProcess] /home/victor/.local/lib/python3.10/site-packages/celery/fixups/django.py:203: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+
+[2022-11-19 03:44:19,215: INFO/MainProcess] celery@victor ready.
+[2022-11-19 03:44:19,235: INFO/MainProcess] Task update_shares[118a9877-713a-4554-93f9-6379f9dd0c58] received
+[2022-11-19 03:44:19,245: ERROR/ForkPoolWorker-7] Task update_shares[118a9877-713a-4554-93f9-6379f9dd0c58] raised unexpected: AttributeError("'QuerySet' object has no attribute 'email'")
+Traceback (most recent call last):
+  File "/home/victor/.local/lib/python3.10/site-packages/celery/app/trace.py", line 451, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/victor/.local/lib/python3.10/site-packages/celery/app/trace.py", line 734, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/victor/Documents/DesafioAlfa/followShares/follows/tasks.py", line 15, in update_shares
+    recipient.append(queries.email)
+AttributeError: 'QuerySet' object has no attribute 'email'
+[2022-11-19 04:00:46,382: INFO/MainProcess] Connected to redis://localhost:6379//
+[2022-11-19 04:00:46,387: INFO/MainProcess] mingle: searching for neighbors
+[2022-11-19 04:00:47,395: INFO/MainProcess] mingle: all alone
+[2022-11-19 04:00:47,412: WARNING/MainProcess] /home/victor/.local/lib/python3.10/site-packages/celery/fixups/django.py:203: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+
+[2022-11-19 04:00:47,412: INFO/MainProcess] celery@victor ready.
+[2022-11-19 04:00:47,430: INFO/MainProcess] Task update_shares[2eb39159-de2e-4e37-b420-30fd1c7b3914] received
+[2022-11-19 04:00:47,435: WARNING/ForkPoolWorker-7] 56
+[2022-11-19 04:00:47,435: WARNING/ForkPoolWorker-7] 5
+[2022-11-19 04:00:47,435: WARNING/ForkPoolWorker-7] 2
+[2022-11-19 04:00:47,435: WARNING/ForkPoolWorker-7] 2
+[2022-11-19 04:00:47,440: INFO/ForkPoolWorker-7] Task update_shares[2eb39159-de2e-4e37-b420-30fd1c7b3914] succeeded in 0.00941754993982613s: None
+[2022-11-19 04:01:45,209: INFO/MainProcess] Task update_shares[703eaef9-86a3-4c5f-bc10-0a3703989f96] received
+[2022-11-19 04:01:45,212: WARNING/ForkPoolWorker-7] 56
+[2022-11-19 04:01:45,212: WARNING/ForkPoolWorker-7] 6
+[2022-11-19 04:01:45,212: WARNING/ForkPoolWorker-7] 3
+[2022-11-19 04:01:45,212: WARNING/ForkPoolWorker-7] 3
+[2022-11-19 04:01:45,213: INFO/ForkPoolWorker-7] Task update_shares[703eaef9-86a3-4c5f-bc10-0a3703989f96] succeeded in 0.002982808044180274s: None
+[2022-11-19 04:02:45,257: INFO/MainProcess] Task update_shares[8ae9b858-141d-4b25-9393-4d41ba6da59a] received
+[2022-11-19 04:02:45,260: WARNING/ForkPoolWorker-7] 57
+[2022-11-19 04:02:45,261: WARNING/ForkPoolWorker-7] 7
+[2022-11-19 04:02:45,261: WARNING/ForkPoolWorker-7] 0
+[2022-11-19 04:02:47,366: WARNING/ForkPoolWorker-7] ['victorclutes@gmail.com', 'victorlutes@usp.br']
+[2022-11-19 04:02:47,366: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-19 04:02:47,366: WARNING/ForkPoolWorker-7]  
+[2022-11-19 04:02:47,366: WARNING/ForkPoolWorker-7] META
+[2022-11-19 04:02:47,366: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-19 04:02:47,366: WARNING/ForkPoolWorker-7]  
+[2022-11-19 04:02:47,366: WARNING/ForkPoolWorker-7] 112.05
+[2022-11-19 04:02:47,366: WARNING/ForkPoolWorker-7] Current value of stock: 112.05, high value of tunnel: 100, current time: 2022-11-19 01:02:47.366718+00:00
+[2022-11-19 04:02:47,367: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-19 04:02:50,973: WARNING/ForkPoolWorker-7] 0
+[2022-11-19 04:02:53,211: WARNING/ForkPoolWorker-7] ['victorclutes@gmail.com', 'victorlutes@usp.br']
+[2022-11-19 04:02:53,212: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-19 04:02:53,212: WARNING/ForkPoolWorker-7]  
+[2022-11-19 04:02:53,212: WARNING/ForkPoolWorker-7] TWTR
+[2022-11-19 04:02:53,212: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-19 04:02:53,212: WARNING/ForkPoolWorker-7]  
+[2022-11-19 04:02:53,212: WARNING/ForkPoolWorker-7] 53.7
+[2022-11-19 04:02:53,213: WARNING/ForkPoolWorker-7] Current value of stock: 53.7, high value of tunnel: 100, current time: 2022-11-19 01:02:53.212972+00:00
+[2022-11-19 04:02:53,214: WARNING/ForkPoolWorker-7] send email buy
+[2022-11-19 04:02:56,294: INFO/ForkPoolWorker-7] Task update_shares[8ae9b858-141d-4b25-9393-4d41ba6da59a] succeeded in 11.03558546002023s: None
+[2022-11-19 04:06:45,474: INFO/MainProcess] Task update_shares[9936f53e-5e77-4232-81b6-a31a0556a22f] received
+[2022-11-19 04:06:45,483: WARNING/ForkPoolWorker-7] 61
+[2022-11-19 04:06:45,483: WARNING/ForkPoolWorker-7] 1
+[2022-11-19 04:06:45,483: WARNING/ForkPoolWorker-7] 0
+[2022-11-19 04:06:47,468: WARNING/ForkPoolWorker-7] ['victorclutes@gmail.com', 'victorlutes@usp.br']
+[2022-11-19 04:06:47,469: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-19 04:06:47,469: WARNING/ForkPoolWorker-7]  
+[2022-11-19 04:06:47,469: WARNING/ForkPoolWorker-7] META
+[2022-11-19 04:06:47,469: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-19 04:06:47,469: WARNING/ForkPoolWorker-7]  
+[2022-11-19 04:06:47,469: WARNING/ForkPoolWorker-7] 112.05
+[2022-11-19 04:06:47,469: WARNING/ForkPoolWorker-7] Current value of stock: 112.05, high value of tunnel: 100, current time: 2022-11-19 01:06:47.469597+00:00
+[2022-11-19 04:06:47,470: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-19 04:06:51,189: WARNING/ForkPoolWorker-7] 0
+[2022-11-19 04:06:53,282: WARNING/ForkPoolWorker-7] ['victorclutes@gmail.com', 'victorlutes@usp.br']
+[2022-11-19 04:06:53,282: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-19 04:06:53,282: WARNING/ForkPoolWorker-7]  
+[2022-11-19 04:06:53,282: WARNING/ForkPoolWorker-7] TWTR
+[2022-11-19 04:06:53,282: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-19 04:06:53,282: WARNING/ForkPoolWorker-7]  
+[2022-11-19 04:06:53,282: WARNING/ForkPoolWorker-7] 53.7
+[2022-11-19 04:06:53,282: WARNING/ForkPoolWorker-7] Current value of stock: 53.7, high value of tunnel: 100, current time: 2022-11-19 01:06:53.282686+00:00
+[2022-11-19 04:06:53,283: WARNING/ForkPoolWorker-7] send email buy
+[2022-11-19 04:06:56,445: INFO/ForkPoolWorker-7] Task update_shares[9936f53e-5e77-4232-81b6-a31a0556a22f] succeeded in 10.969444841030054s: None
+[2022-11-19 04:07:45,517: INFO/MainProcess] Task update_shares[c98718c1-2a39-4c41-9114-7f953bad89b8] received
+[2022-11-19 04:07:45,519: WARNING/ForkPoolWorker-7] 62
+[2022-11-19 04:07:45,519: WARNING/ForkPoolWorker-7] 2
+[2022-11-19 04:07:45,520: WARNING/ForkPoolWorker-7] 1
+[2022-11-19 04:07:45,520: WARNING/ForkPoolWorker-7] 1
+[2022-11-19 04:07:45,521: INFO/ForkPoolWorker-7] Task update_shares[c98718c1-2a39-4c41-9114-7f953bad89b8] succeeded in 0.0032453479943796992s: None
+[2022-11-19 04:08:45,527: INFO/MainProcess] Task update_shares[759e006a-c69b-4268-9594-dd7c0f1be046] received
+[2022-11-19 04:08:45,529: WARNING/ForkPoolWorker-7] 63
+[2022-11-19 04:08:45,529: WARNING/ForkPoolWorker-7] 3
+[2022-11-19 04:08:45,529: WARNING/ForkPoolWorker-7] 2
+[2022-11-19 04:08:45,530: WARNING/ForkPoolWorker-7] 2
+[2022-11-19 04:08:45,531: INFO/ForkPoolWorker-7] Task update_shares[759e006a-c69b-4268-9594-dd7c0f1be046] succeeded in 0.0034770830534398556s: None
+[2022-11-19 04:11:45,624: INFO/MainProcess] Task update_shares[2142d11c-c9fc-49cd-9a69-50e196920043] received
+[2022-11-19 04:11:45,628: WARNING/ForkPoolWorker-7] 66
+[2022-11-19 04:11:45,628: WARNING/ForkPoolWorker-7] 6
+[2022-11-19 04:11:45,628: WARNING/ForkPoolWorker-7] 1
+[2022-11-19 04:11:45,628: WARNING/ForkPoolWorker-7] 1
+[2022-11-19 04:11:45,629: INFO/ForkPoolWorker-7] Task update_shares[2142d11c-c9fc-49cd-9a69-50e196920043] succeeded in 0.003392225014977157s: None
+[2022-11-19 04:12:45,675: INFO/MainProcess] Task update_shares[ac21ea6a-0166-4ba4-ac60-ad82d7c59bba] received
+[2022-11-19 04:12:45,677: WARNING/ForkPoolWorker-7] 67
+[2022-11-19 04:12:45,677: WARNING/ForkPoolWorker-7] 7
+[2022-11-19 04:12:45,677: WARNING/ForkPoolWorker-7] 2
+[2022-11-19 04:12:45,678: WARNING/ForkPoolWorker-7] 2
+[2022-11-19 04:12:45,679: INFO/ForkPoolWorker-7] Task update_shares[ac21ea6a-0166-4ba4-ac60-ad82d7c59bba] succeeded in 0.0031437270808964968s: None

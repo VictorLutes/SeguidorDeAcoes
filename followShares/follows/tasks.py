@@ -9,20 +9,20 @@ from django.conf import settings
 
 @shared_task(name='update_shares')
 def update_shares():
-    recipient=[]
-    queries=Recipient.objects.all()
-    for i in queries:
-        recipient.append(queries.email)
+    recipient_list=[]
+    querieEmails=Recipient.objects.all()
+    for recipient in querieEmails:
+        recipient_list.append(recipient.email)
     queries=Stock.objects.all()
     for share in queries:
-        timesince = datetime.now(timezone.utc)+timedelta(hours=3, minutes=30) - share.timeCreated
+        timesince = datetime.now(timezone.utc) - share.timeCreated
         minutessince = int(timesince.total_seconds() / 60)
-
+        print(minutessince%share.minutes)
         if(minutessince%share.minutes==0):
             #update currentPrice
             ticker = yf.Ticker(share.sigla).info
             market_price = ticker['regularMarketPrice']
-            print(recipient)
+            print(recipient_list)
             print('Ticker: ', share.sigla)
             print('Market Price:', market_price)
             print('Current value of stock: '+str(share.currentPrice)+', high value of tunnel: '+str(share.high)+', current time: '+str(datetime.now(timezone.utc)-timedelta(hours=3)))
@@ -34,7 +34,7 @@ def update_shares():
                     'sell stock: '+share.sigla,
                     'Current value of stock: '+str(share.currentPrice)+'\nHigh value of tunnel: '+str(share.high)+'\nCurrent time: '+str(datetime.now(timezone.utc)-timedelta(hours=3)),
                     settings.EMAIL_HOST_USER,
-                    recipient,
+                    recipient_list,
                     fail_silently=False
                 )
             if(share.currentPrice<share.low):
@@ -43,7 +43,7 @@ def update_shares():
                     'buy stock: '+share.sigla,
                     'Current value of stock: '+str(share.currentPrice)+'\nLow value of tunnel: '+str(share.low)+'\nCurrent time: '+str(datetime.now(timezone.utc)-timedelta(hours=3)),
                     settings.EMAIL_HOST_USER,
-                    recipient,
+                    recipient_list,
                     fail_silently=False
                 )
     return 

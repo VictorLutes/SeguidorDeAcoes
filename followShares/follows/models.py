@@ -17,7 +17,7 @@ class Stock(models.Model):
         return self.sigla
 
 class Recipient(models.Model):
-    email = models.CharField(max_length=30)
+    email = models.EmailField(max_length=30)
     def get_absolute_url(self):
         return reverse('model-detail-view', args=[str(self.id)])
 
