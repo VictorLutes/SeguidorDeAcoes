@@ -25730,3 +25730,140 @@ AttributeError: 'QuerySet' object has no attribute 'email'
 [2022-11-19 04:12:45,677: WARNING/ForkPoolWorker-7] 2
 [2022-11-19 04:12:45,678: WARNING/ForkPoolWorker-7] 2
 [2022-11-19 04:12:45,679: INFO/ForkPoolWorker-7] Task update_shares[ac21ea6a-0166-4ba4-ac60-ad82d7c59bba] succeeded in 0.0031437270808964968s: None
+[2022-11-20 14:56:19,615: INFO/MainProcess] Connected to redis://localhost:6379//
+[2022-11-20 14:56:19,622: INFO/MainProcess] mingle: searching for neighbors
+[2022-11-20 14:56:20,630: INFO/MainProcess] mingle: all alone
+[2022-11-20 14:56:20,647: WARNING/MainProcess] /home/victor/.local/lib/python3.10/site-packages/celery/fixups/django.py:203: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+
+[2022-11-20 14:56:20,647: INFO/MainProcess] celery@victor ready.
+[2022-11-20 14:56:20,668: INFO/MainProcess] Task update_shares[54cca9cf-ee77-435c-8da9-cd9d973bd268] received
+[2022-11-20 14:56:20,674: WARNING/ForkPoolWorker-7] 111
+[2022-11-20 14:56:20,674: WARNING/ForkPoolWorker-7] 0
+[2022-11-20 14:56:22,929: WARNING/ForkPoolWorker-7] ['victorclutes@gmail.com', 'victorlutes@usp.br']
+[2022-11-20 14:56:22,930: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-20 14:56:22,930: WARNING/ForkPoolWorker-7]  
+[2022-11-20 14:56:22,930: WARNING/ForkPoolWorker-7] TSLA
+[2022-11-20 14:56:22,930: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-20 14:56:22,930: WARNING/ForkPoolWorker-7]  
+[2022-11-20 14:56:22,930: WARNING/ForkPoolWorker-7] 180.19
+[2022-11-20 14:56:22,930: WARNING/ForkPoolWorker-7] Current value of stock: 180.19, high value of tunnel: 100, current time: 2022-11-20 11:56:22.930429+00:00
+[2022-11-20 14:56:22,931: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-20 14:56:26,221: WARNING/ForkPoolWorker-7] 2
+[2022-11-20 14:56:26,221: WARNING/ForkPoolWorker-7] 1
+[2022-11-20 14:56:26,222: WARNING/ForkPoolWorker-7] 0
+[2022-11-20 14:56:29,296: WARNING/ForkPoolWorker-7] ['victorclutes@gmail.com', 'victorlutes@usp.br']
+[2022-11-20 14:56:29,296: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-20 14:56:29,297: WARNING/ForkPoolWorker-7]  
+[2022-11-20 14:56:29,297: WARNING/ForkPoolWorker-7] Alphabet BDR
+[2022-11-20 14:56:29,297: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-20 14:56:29,297: WARNING/ForkPoolWorker-7]  
+[2022-11-20 14:56:29,298: WARNING/ForkPoolWorker-7] None
+[2022-11-20 14:56:29,298: WARNING/ForkPoolWorker-7] Current value of stock: 0.0, high value of tunnel: 60, current time: 2022-11-20 11:56:29.298236+00:00
+[2022-11-20 14:56:29,315: ERROR/ForkPoolWorker-7] Task update_shares[54cca9cf-ee77-435c-8da9-cd9d973bd268] raised unexpected: IntegrityError('NOT NULL constraint failed: follows_stock.currentPrice')
+Traceback (most recent call last):
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: follows_stock.currentPrice
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/victor/.local/lib/python3.10/site-packages/celery/app/trace.py", line 451, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/victor/.local/lib/python3.10/site-packages/celery/app/trace.py", line 734, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/victor/Documents/DesafioAlfa/followShares/follows/tasks.py", line 30, in update_shares
+    share.save()
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/models/base.py", line 812, in save
+    self.save_base(
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/models/base.py", line 863, in save_base
+    updated = self._save_table(
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/models/base.py", line 976, in _save_table
+    updated = self._do_update(
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/models/base.py", line 1040, in _do_update
+    return filtered._update(values) > 0
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/models/query.py", line 1215, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1822, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: follows_stock.currentPrice
+[2022-11-20 14:57:18,932: INFO/MainProcess] Task update_shares[922d5363-f195-4356-8c7f-29daf0e021c7] received
+[2022-11-20 14:57:18,935: WARNING/ForkPoolWorker-7] 112
+[2022-11-20 14:57:18,935: WARNING/ForkPoolWorker-7] 1
+[2022-11-20 14:57:18,935: WARNING/ForkPoolWorker-7] 3
+[2022-11-20 14:57:18,935: WARNING/ForkPoolWorker-7] 2
+[2022-11-20 14:57:18,935: WARNING/ForkPoolWorker-7] 0
+[2022-11-20 14:57:22,210: WARNING/ForkPoolWorker-7] ['victorclutes@gmail.com', 'victorlutes@usp.br']
+[2022-11-20 14:57:22,211: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-20 14:57:22,211: WARNING/ForkPoolWorker-7]  
+[2022-11-20 14:57:22,211: WARNING/ForkPoolWorker-7] Alphabet BDR
+[2022-11-20 14:57:22,211: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-20 14:57:22,211: WARNING/ForkPoolWorker-7]  
+[2022-11-20 14:57:22,211: WARNING/ForkPoolWorker-7] None
+[2022-11-20 14:57:22,211: WARNING/ForkPoolWorker-7] Current value of stock: 0.0, high value of tunnel: 60, current time: 2022-11-20 11:57:22.211406+00:00
+[2022-11-20 14:57:22,213: ERROR/ForkPoolWorker-7] Task update_shares[922d5363-f195-4356-8c7f-29daf0e021c7] raised unexpected: IntegrityError('NOT NULL constraint failed: follows_stock.currentPrice')
+Traceback (most recent call last):
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: follows_stock.currentPrice
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/victor/.local/lib/python3.10/site-packages/celery/app/trace.py", line 451, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/victor/.local/lib/python3.10/site-packages/celery/app/trace.py", line 734, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/victor/Documents/DesafioAlfa/followShares/follows/tasks.py", line 30, in update_shares
+    share.save()
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/models/base.py", line 812, in save
+    self.save_base(
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/models/base.py", line 863, in save_base
+    updated = self._save_table(
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/models/base.py", line 976, in _save_table
+    updated = self._do_update(
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/models/base.py", line 1040, in _do_update
+    return filtered._update(values) > 0
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/models/query.py", line 1215, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1822, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: follows_stock.currentPrice

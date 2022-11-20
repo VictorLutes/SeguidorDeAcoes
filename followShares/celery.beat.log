@@ -1882,3 +1882,6 @@ _gdbm.error: [Errno 11] Resource temporarily unavailable: 'celerybeat-schedule'
 [2022-11-19 04:13:45,731: INFO/MainProcess] Scheduler: Sending due task update_shares_minute (update_shares)
 [2022-11-19 04:14:45,780: INFO/MainProcess] Scheduler: Sending due task update_shares_minute (update_shares)
 [2022-11-19 04:15:45,827: INFO/MainProcess] Scheduler: Sending due task update_shares_minute (update_shares)
+[2022-11-20 14:56:18,875: INFO/MainProcess] beat: Starting...
+[2022-11-20 14:56:18,932: INFO/MainProcess] Scheduler: Sending due task update_shares_minute (update_shares)
+[2022-11-20 14:57:18,929: INFO/MainProcess] Scheduler: Sending due task update_shares_minute (update_shares)
