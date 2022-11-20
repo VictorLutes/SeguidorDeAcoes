@@ -22,7 +22,7 @@ Crie a base de dados local rodando:<br>
 Para executar:<br>
 &emsp;    rode em 3 abas do terminal dentro da pasta do projeto:<br>
 &emsp;    1o terminal executa: "python manage.py runserver 8080" (ou qualquer outra porta)<br>
-&emsp;    2o terminal executa: "redis-server"<br>
+&emsp;    2o terminal executa: "redis-server --port 6379"<br>
 &emsp;    3o terminal executa: "celery -A followShares worker -l info"<br>
 
 agora no ser browser busque: "http://localhost:8080" (substituindo 8080 pela porta usada)<br>
