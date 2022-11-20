@@ -3,16 +3,17 @@ from .models import Stock, Recipient
 from .form import StockForm, RecipientForm
 
 def listItems(request):
+    #pagina que lista todas as acoes, podendo atualizar e remover elas, podendo adicionar uma nova acao
+    #e lista todos os emails podendo deletar eles ou adicionar um novo email
     latest_stock_list = Stock.objects.all()
     latest_recipient_list = Recipient.objects.all()
     stockForm=StockForm()
-    recipientForm=RecipientForm()
     context = {
         'stock_list': latest_stock_list,
         'stock_form': stockForm,
         'recipient_list': latest_recipient_list,
-        'recipient_form': recipientForm,
     }
+    #se recebeu um post de uma nova acao salvo ela
     if request.method=='POST':
         print(request.POST)
         form=StockForm(request.POST)
@@ -22,12 +23,14 @@ def listItems(request):
     return render(request, 'listItems.html', context)
 
 def update_stock(request, pk):
+    #pagina para atualizar uma acao especifica
     latest_stock = Stock.objects.get(id=pk)
     stockForm=StockForm(instance=latest_stock)
     context = {
         'stock_form': stockForm,
         'stock': latest_stock
     }
+    #se recebeu um post, salvo a acao atualizada
     if request.method=='POST':
         print(request.POST)
         form=StockForm(request.POST, instance=latest_stock)
@@ -37,10 +40,12 @@ def update_stock(request, pk):
     return render(request, 'formUpdate.html', context)
 
 def delete_stock(request, pk):
+    #pagina para confirmar ou cancelar a remocao de uma acao
     stock = Stock.objects.get(id=pk)
     context = {
         'item': stock
     }
+    #se recebo um post apago essa acao
     if request.method=='POST':
         stock.delete()
         print(request.POST)
@@ -49,10 +54,12 @@ def delete_stock(request, pk):
 
 
 def delete_email(request, pk):
+    #pagina para confirmar ou cancelar a remocao de um email
     email = Recipient.objects.get(id=pk)
     context = {
         'item': email
     }
+    #se recebo um post apago esse email
     if request.method=='POST':
         email.delete()
         print(request.POST)
@@ -60,10 +67,12 @@ def delete_email(request, pk):
     return render(request, 'confirmDelete.html', context)
 
 def add_recipient(request):
+    #pagina para adicionar um novo email
     recipientForm=RecipientForm()
     context = {
         'recipient_form': recipientForm,
     }
+    #se recebo um post apago o email
     if request.method=='POST':
         print(request.POST)
         form=RecipientForm(request.POST)

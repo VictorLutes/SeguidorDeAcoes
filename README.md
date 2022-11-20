@@ -25,3 +25,12 @@ nessa pagina voce pode visualizar e adicionar acoes a serem acompanhadas e adici
 
 para parar a execucao do celery worker que envia os emails e atualiza os valores das acoes execute (senao vai continuar com o processo rodando e enviando emails):
     pkill -f celery
+
+Estrutura do projeto
+    followShares/followShares é uma pasta com os arquivos de configuracao do projeto, alem do celery.py que guarda a configuracao da tarefa que ocorre a cada minuto
+    
+    followShares/follows é uma pasta com os arquivos da pagina web e das tarefas a serem feitas. Nessa pasta os arquivos mais importantes sao:
+        A pasta templates com os arquivos html para as views
+        O arquivo views.py que faz a apresentacao das diferentes paginas
+        O arquivo models.py que guarda os modelos das acoes e dos recipientes(emails)
+        O arquivo tasks.py que contem a tarefa de atualizar as acoes e roda a cada minutos, atualizando as acoes a cada n minutos
