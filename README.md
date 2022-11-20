@@ -9,7 +9,7 @@ Para executar primeiro instale:<br>
 <br>
 Para poder enviar emails:<br>
 &emsp;    Crie um arquivo followShares/config.py:<br>
-&emsp;    substituindo suas senhas:<br>
+&emsp;    Com essas 3 variaveis, substituindo suas senhas:<br>
 &emsp;&emsp;        secretKey='sua chave secreta do django'<br>
 &emsp;&emsp;        emailHostUser='seu email que será usado para enviar os emails'<br>
 &emsp;&emsp;        emailHostPassword='apps password desse email' (pode criar ela em https://security.google.com/settings/security/apppasswords, qualquer duvida me mande um email e eu envio o meu config.py com minhas senhas para vocês testarem)<br>
