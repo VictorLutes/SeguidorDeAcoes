@@ -8,10 +8,11 @@ Para executar primeiro instale:
     sudo apt install redis
 
 Para poder enviar emails:
-    No arquivo /followShares/followShares/settings.py:
-    substitua
-        EMAIL_HOST_USER = 'meu email'
-        EMAIL_HOST_PASSWORD = 'minha senha' (pode fazer ela em https://security.google.com/settings/security/apppasswords, qualquer duvida me mande email e eu envio a minha senha e email para testarem)
+    Crie um arquivo /followShares/config.py:
+    substituindo suas senhas:
+        secretKey='sua chave secreta do django'
+        emailHostUser='seu email que será usado para enviar os emails'
+        emailHostPassword='a apps password desse email' (pode fazer ela em https://security.google.com/settings/security/apppasswords, qualquer duvida me mande um email e eu envio o meu config.py com minhas senhas para vocês testarem)
 
 Para executar:
     rode em 3 abas do terminal dentro da pasta do projeto:

@@ -1,5 +1,6 @@
 from django.db import models
 from django.urls import reverse
+import yfinance as yf
 
 # Create your models here.
 
@@ -9,7 +10,7 @@ class Stock(models.Model):
     low = models.IntegerField(default=0)
     high = models.IntegerField(default=0)
     minutes = models.IntegerField(default=0)
-    currentPrice = models.FloatField(default=0.0)
+    currentPrice = models.FloatField(default=1.0)
     def get_absolute_url(self):
         return reverse('model-detail-view', args=[str(self.id)])
 

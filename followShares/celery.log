@@ -25867,3 +25867,765 @@ Traceback (most recent call last):
   File "/home/victor/.local/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
     return Database.Cursor.execute(self, query, params)
 django.db.utils.IntegrityError: NOT NULL constraint failed: follows_stock.currentPrice
+[2022-11-20 14:58:18,980: INFO/MainProcess] Task update_shares[73e44433-1bb4-48d4-a5f6-58b24c80c2c4] received
+[2022-11-20 14:58:18,983: WARNING/ForkPoolWorker-7] 113
+[2022-11-20 14:58:18,983: WARNING/ForkPoolWorker-7] 2
+[2022-11-20 14:58:18,983: WARNING/ForkPoolWorker-7] 0
+[2022-11-20 14:58:21,125: WARNING/ForkPoolWorker-7] ['victorclutes@gmail.com', 'victorlutes@usp.br']
+[2022-11-20 14:58:21,126: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-20 14:58:21,126: WARNING/ForkPoolWorker-7]  
+[2022-11-20 14:58:21,126: WARNING/ForkPoolWorker-7] META
+[2022-11-20 14:58:21,126: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-20 14:58:21,126: WARNING/ForkPoolWorker-7]  
+[2022-11-20 14:58:21,126: WARNING/ForkPoolWorker-7] 112.05
+[2022-11-20 14:58:21,126: WARNING/ForkPoolWorker-7] Current value of stock: 112.05, high value of tunnel: 100, current time: 2022-11-20 11:58:21.126431+00:00
+[2022-11-20 14:58:21,127: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-20 14:58:24,152: WARNING/ForkPoolWorker-7] 3
+[2022-11-20 14:58:24,152: WARNING/ForkPoolWorker-7] 0
+[2022-11-20 14:58:27,064: WARNING/ForkPoolWorker-7] ['victorclutes@gmail.com', 'victorlutes@usp.br']
+[2022-11-20 14:58:27,064: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-20 14:58:27,064: WARNING/ForkPoolWorker-7]  
+[2022-11-20 14:58:27,065: WARNING/ForkPoolWorker-7] Alphabet BDR
+[2022-11-20 14:58:27,065: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-20 14:58:27,065: WARNING/ForkPoolWorker-7]  
+[2022-11-20 14:58:27,065: WARNING/ForkPoolWorker-7] None
+[2022-11-20 14:58:27,066: WARNING/ForkPoolWorker-7] Current value of stock: 0.0, high value of tunnel: 60, current time: 2022-11-20 11:58:27.066036+00:00
+[2022-11-20 14:58:27,068: ERROR/ForkPoolWorker-7] Task update_shares[73e44433-1bb4-48d4-a5f6-58b24c80c2c4] raised unexpected: IntegrityError('NOT NULL constraint failed: follows_stock.currentPrice')
+Traceback (most recent call last):
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: follows_stock.currentPrice
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/victor/.local/lib/python3.10/site-packages/celery/app/trace.py", line 451, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/victor/.local/lib/python3.10/site-packages/celery/app/trace.py", line 734, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/victor/Documents/DesafioAlfa/followShares/follows/tasks.py", line 30, in update_shares
+    share.save()
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/models/base.py", line 812, in save
+    self.save_base(
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/models/base.py", line 863, in save_base
+    updated = self._save_table(
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/models/base.py", line 976, in _save_table
+    updated = self._do_update(
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/models/base.py", line 1040, in _do_update
+    return filtered._update(values) > 0
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/models/query.py", line 1215, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1822, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: follows_stock.currentPrice
+[2022-11-20 14:59:19,033: INFO/MainProcess] Task update_shares[57782f77-efbf-4554-8110-999162362bef] received
+[2022-11-20 14:59:19,035: WARNING/ForkPoolWorker-7] 114
+[2022-11-20 14:59:19,035: WARNING/ForkPoolWorker-7] 3
+[2022-11-20 14:59:19,035: WARNING/ForkPoolWorker-7] 1
+[2022-11-20 14:59:19,035: WARNING/ForkPoolWorker-7] 0
+[2022-11-20 14:59:20,837: WARNING/ForkPoolWorker-7] ['victorclutes@gmail.com', 'victorlutes@usp.br']
+[2022-11-20 14:59:20,837: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-20 14:59:20,837: WARNING/ForkPoolWorker-7]  
+[2022-11-20 14:59:20,837: WARNING/ForkPoolWorker-7] TWTR
+[2022-11-20 14:59:20,837: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-20 14:59:20,837: WARNING/ForkPoolWorker-7]  
+[2022-11-20 14:59:20,838: WARNING/ForkPoolWorker-7] 53.7
+[2022-11-20 14:59:20,838: WARNING/ForkPoolWorker-7] Current value of stock: 53.7, high value of tunnel: 100, current time: 2022-11-20 11:59:20.838196+00:00
+[2022-11-20 14:59:20,839: WARNING/ForkPoolWorker-7] send email buy
+[2022-11-20 14:59:23,579: WARNING/ForkPoolWorker-7] 1
+[2022-11-20 14:59:23,581: INFO/ForkPoolWorker-7] Task update_shares[57782f77-efbf-4554-8110-999162362bef] succeeded in 4.547210079967044s: None
+[2022-11-20 15:00:19,085: INFO/MainProcess] Task update_shares[14f52a45-c0a0-4e04-be4d-976de6521433] received
+[2022-11-20 15:00:19,090: WARNING/ForkPoolWorker-7] 115
+[2022-11-20 15:00:19,090: WARNING/ForkPoolWorker-7] 4
+[2022-11-20 15:00:19,090: WARNING/ForkPoolWorker-7] 2
+[2022-11-20 15:00:19,091: WARNING/ForkPoolWorker-7] 1
+[2022-11-20 15:00:19,091: WARNING/ForkPoolWorker-7] 1
+[2022-11-20 15:00:19,093: INFO/ForkPoolWorker-7] Task update_shares[14f52a45-c0a0-4e04-be4d-976de6521433] succeeded in 0.006403382052667439s: None
+[2022-11-20 15:01:19,133: INFO/MainProcess] Task update_shares[a3245674-1853-4043-8dd8-9dd0dd2bfe89] received
+[2022-11-20 15:01:19,135: WARNING/ForkPoolWorker-7] 116
+[2022-11-20 15:01:19,135: WARNING/ForkPoolWorker-7] 5
+[2022-11-20 15:01:19,136: WARNING/ForkPoolWorker-7] 3
+[2022-11-20 15:01:19,136: WARNING/ForkPoolWorker-7] 2
+[2022-11-20 15:01:19,136: WARNING/ForkPoolWorker-7] 0
+[2022-11-20 15:01:21,921: WARNING/ForkPoolWorker-7] ['victorclutes@gmail.com', 'victorlutes@usp.br']
+[2022-11-20 15:01:21,921: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-20 15:01:21,921: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:01:21,921: WARNING/ForkPoolWorker-7] GOGL34
+[2022-11-20 15:01:21,921: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-20 15:01:21,922: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:01:21,922: WARNING/ForkPoolWorker-7] None
+[2022-11-20 15:01:21,922: WARNING/ForkPoolWorker-7] Current value of stock: 0.0, high value of tunnel: 60, current time: 2022-11-20 12:01:21.922415+00:00
+[2022-11-20 15:01:21,924: ERROR/ForkPoolWorker-7] Task update_shares[a3245674-1853-4043-8dd8-9dd0dd2bfe89] raised unexpected: IntegrityError('NOT NULL constraint failed: follows_stock.currentPrice')
+Traceback (most recent call last):
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: follows_stock.currentPrice
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/victor/.local/lib/python3.10/site-packages/celery/app/trace.py", line 451, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/home/victor/.local/lib/python3.10/site-packages/celery/app/trace.py", line 734, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/home/victor/Documents/DesafioAlfa/followShares/follows/tasks.py", line 30, in update_shares
+    share.save()
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/models/base.py", line 812, in save
+    self.save_base(
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/models/base.py", line 863, in save_base
+    updated = self._save_table(
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/models/base.py", line 976, in _save_table
+    updated = self._do_update(
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/models/base.py", line 1040, in _do_update
+    return filtered._update(values) > 0
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/models/query.py", line 1215, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1822, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/victor/.local/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: follows_stock.currentPrice
+[2022-11-20 15:01:24,310: INFO/MainProcess] Connected to redis://localhost:6379//
+[2022-11-20 15:01:24,313: INFO/MainProcess] mingle: searching for neighbors
+[2022-11-20 15:01:25,324: INFO/MainProcess] mingle: all alone
+[2022-11-20 15:01:25,340: WARNING/MainProcess] /home/victor/.local/lib/python3.10/site-packages/celery/fixups/django.py:203: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+
+[2022-11-20 15:01:25,341: INFO/MainProcess] celery@victor ready.
+[2022-11-20 15:05:36,247: INFO/MainProcess] Connected to redis://localhost:6379//
+[2022-11-20 15:05:36,251: INFO/MainProcess] mingle: searching for neighbors
+[2022-11-20 15:05:37,260: INFO/MainProcess] mingle: all alone
+[2022-11-20 15:05:37,277: WARNING/MainProcess] /home/victor/.local/lib/python3.10/site-packages/celery/fixups/django.py:203: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+
+[2022-11-20 15:05:37,277: INFO/MainProcess] celery@victor ready.
+[2022-11-20 15:05:37,297: INFO/MainProcess] Task update_shares[887d0c53-899b-4d53-b6cb-988bc26d66cd] received
+[2022-11-20 15:05:37,304: WARNING/ForkPoolWorker-7] 0
+[2022-11-20 15:05:40,248: ERROR/MainProcess] Process 'ForkPoolWorker-12' pid:467875 exited with 'signal 15 (SIGTERM)'
+[2022-11-20 15:05:40,259: ERROR/MainProcess] Process 'ForkPoolWorker-11' pid:467874 exited with 'signal 15 (SIGTERM)'
+[2022-11-20 15:05:40,269: ERROR/MainProcess] Process 'ForkPoolWorker-10' pid:467873 exited with 'signal 15 (SIGTERM)'
+[2022-11-20 15:05:40,280: ERROR/MainProcess] Process 'ForkPoolWorker-9' pid:467872 exited with 'signal 15 (SIGTERM)'
+[2022-11-20 15:05:40,291: ERROR/MainProcess] Process 'ForkPoolWorker-8' pid:467871 exited with 'signal 15 (SIGTERM)'
+[2022-11-20 15:05:40,301: ERROR/MainProcess] Process 'ForkPoolWorker-7' pid:467870 exited with 'signal 15 (SIGTERM)'
+[2022-11-20 15:05:40,312: ERROR/MainProcess] Process 'ForkPoolWorker-6' pid:467869 exited with 'signal 15 (SIGTERM)'
+[2022-11-20 15:05:40,322: ERROR/MainProcess] Process 'ForkPoolWorker-5' pid:467868 exited with 'signal 15 (SIGTERM)'
+[2022-11-20 15:05:40,333: ERROR/MainProcess] Process 'ForkPoolWorker-4' pid:467867 exited with 'signal 15 (SIGTERM)'
+[2022-11-20 15:05:40,344: ERROR/MainProcess] Process 'ForkPoolWorker-3' pid:467866 exited with 'signal 15 (SIGTERM)'
+[2022-11-20 15:05:40,354: ERROR/MainProcess] Process 'ForkPoolWorker-2' pid:467865 exited with 'signal 15 (SIGTERM)'
+[2022-11-20 15:05:40,365: ERROR/MainProcess] Process 'ForkPoolWorker-1' pid:467864 exited with 'signal 15 (SIGTERM)'
+[2022-11-20 15:05:40,388: ERROR/MainProcess] Task handler raised error: WorkerLostError('Worker exited prematurely: signal 15 (SIGTERM) Job: 0.')
+Traceback (most recent call last):
+  File "/home/victor/.local/lib/python3.10/site-packages/celery/worker/worker.py", line 203, in start
+    self.blueprint.start(self)
+  File "/home/victor/.local/lib/python3.10/site-packages/celery/bootsteps.py", line 116, in start
+    step.start(parent)
+  File "/home/victor/.local/lib/python3.10/site-packages/celery/bootsteps.py", line 365, in start
+    return self.obj.start()
+  File "/home/victor/.local/lib/python3.10/site-packages/celery/worker/consumer/consumer.py", line 332, in start
+    blueprint.start(self)
+  File "/home/victor/.local/lib/python3.10/site-packages/celery/bootsteps.py", line 116, in start
+    step.start(parent)
+  File "/home/victor/.local/lib/python3.10/site-packages/celery/worker/consumer/consumer.py", line 628, in start
+    c.loop(*c.loop_args())
+  File "/home/victor/.local/lib/python3.10/site-packages/celery/worker/loops.py", line 97, in asynloop
+    next(loop)
+  File "/home/victor/.local/lib/python3.10/site-packages/kombu/asynchronous/hub.py", line 306, in create_loop
+    events = poll(poll_timeout)
+  File "/home/victor/.local/lib/python3.10/site-packages/kombu/utils/eventio.py", line 81, in poll
+    return self._epoll.poll(timeout if timeout is not None else -1)
+  File "/home/victor/.local/lib/python3.10/site-packages/celery/apps/worker.py", line 299, in _handle_request
+    raise exc(exitcode)
+celery.exceptions.WorkerShutdown: 0
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/victor/.local/lib/python3.10/site-packages/billiard/pool.py", line 1265, in mark_as_worker_lost
+    raise WorkerLostError(
+billiard.exceptions.WorkerLostError: Worker exited prematurely: signal 15 (SIGTERM) Job: 0.
+[2022-11-20 15:15:15,686: INFO/MainProcess] Connected to redis://localhost:6379//
+[2022-11-20 15:15:15,695: INFO/MainProcess] mingle: searching for neighbors
+[2022-11-20 15:15:16,704: INFO/MainProcess] mingle: all alone
+[2022-11-20 15:15:16,716: WARNING/MainProcess] /home/victor/.local/lib/python3.10/site-packages/celery/fixups/django.py:203: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+
+[2022-11-20 15:15:16,717: INFO/MainProcess] celery@victor ready.
+[2022-11-20 15:15:16,745: INFO/MainProcess] Task update_shares[4d6151ab-d711-4390-9fed-e7297fa3f515] received
+[2022-11-20 15:15:16,751: WARNING/ForkPoolWorker-7] 10
+[2022-11-20 15:15:16,751: WARNING/ForkPoolWorker-7] 9
+[2022-11-20 15:15:16,751: WARNING/ForkPoolWorker-7] 1
+[2022-11-20 15:15:16,752: WARNING/ForkPoolWorker-7] 0
+[2022-11-20 15:15:19,531: WARNING/ForkPoolWorker-7] ['victorclutes@gmail.com', 'victorlutes@usp.br']
+[2022-11-20 15:15:19,533: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-20 15:15:19,533: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:15:19,533: WARNING/ForkPoolWorker-7] TWTR
+[2022-11-20 15:15:19,533: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-20 15:15:19,533: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:15:19,533: WARNING/ForkPoolWorker-7] 53.7
+[2022-11-20 15:15:19,533: WARNING/ForkPoolWorker-7] Current value of stock: 53.7, high value of tunnel: 100, current time: 2022-11-20 12:15:19.533845+00:00
+[2022-11-20 15:15:20,677: WARNING/ForkPoolWorker-7] send email buy
+[2022-11-20 15:15:23,736: WARNING/ForkPoolWorker-7] 0
+[2022-11-20 15:15:25,726: WARNING/ForkPoolWorker-7] ['victorclutes@gmail.com', 'victorlutes@usp.br']
+[2022-11-20 15:15:25,726: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-20 15:15:25,726: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:15:25,726: WARNING/ForkPoolWorker-7] GOOG
+[2022-11-20 15:15:25,726: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-20 15:15:25,726: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:15:25,727: WARNING/ForkPoolWorker-7] 97.8
+[2022-11-20 15:15:25,727: WARNING/ForkPoolWorker-7] Current value of stock: 1.0, high value of tunnel: 60, current time: 2022-11-20 12:15:25.727250+00:00
+[2022-11-20 15:15:25,749: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-20 15:15:28,733: INFO/ForkPoolWorker-7] Task update_shares[4d6151ab-d711-4390-9fed-e7297fa3f515] succeeded in 11.985638363985345s: None
+[2022-11-20 15:18:14,600: INFO/MainProcess] Task update_shares[31bb69b2-04cd-477f-a1c6-1a1de31e6f96] received
+[2022-11-20 15:18:14,607: WARNING/ForkPoolWorker-7] 13
+[2022-11-20 15:18:14,607: WARNING/ForkPoolWorker-7] 2
+[2022-11-20 15:18:14,607: WARNING/ForkPoolWorker-7] 0
+[2022-11-20 15:18:16,526: WARNING/ForkPoolWorker-7] ['victorclutes@gmail.com', 'victorlutes@usp.br']
+[2022-11-20 15:18:16,526: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-20 15:18:16,526: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:18:16,526: WARNING/ForkPoolWorker-7] META
+[2022-11-20 15:18:16,526: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-20 15:18:16,526: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:18:16,526: WARNING/ForkPoolWorker-7] 112.05
+[2022-11-20 15:18:16,526: WARNING/ForkPoolWorker-7] Current value of stock: 112.05, high value of tunnel: 100, current time: 2022-11-20 12:18:16.526779+00:00
+[2022-11-20 15:18:16,527: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-20 15:18:19,440: WARNING/ForkPoolWorker-7] 3
+[2022-11-20 15:18:19,441: WARNING/ForkPoolWorker-7] 0
+[2022-11-20 15:18:22,048: WARNING/ForkPoolWorker-7] ['victorclutes@gmail.com', 'victorlutes@usp.br']
+[2022-11-20 15:18:22,049: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-20 15:18:22,049: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:18:22,049: WARNING/ForkPoolWorker-7] GOOG
+[2022-11-20 15:18:22,049: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-20 15:18:22,049: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:18:22,049: WARNING/ForkPoolWorker-7] 97.8
+[2022-11-20 15:18:22,049: WARNING/ForkPoolWorker-7] Current value of stock: 97.8, high value of tunnel: 60, current time: 2022-11-20 12:18:22.049800+00:00
+[2022-11-20 15:18:22,050: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-20 15:18:24,873: INFO/ForkPoolWorker-7] Task update_shares[31bb69b2-04cd-477f-a1c6-1a1de31e6f96] succeeded in 10.26862541900482s: None
+[2022-11-20 15:19:14,640: INFO/MainProcess] Task update_shares[c9e47b0f-5a92-4dcc-a53c-77fd2ce76097] received
+[2022-11-20 15:19:14,645: WARNING/ForkPoolWorker-7] 14
+[2022-11-20 15:19:14,645: WARNING/ForkPoolWorker-7] 3
+[2022-11-20 15:19:14,645: WARNING/ForkPoolWorker-7] 1
+[2022-11-20 15:19:14,646: WARNING/ForkPoolWorker-7] 0
+[2022-11-20 15:19:16,806: WARNING/ForkPoolWorker-7] ['victorclutes@gmail.com', 'victorlutes@usp.br']
+[2022-11-20 15:19:16,806: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-20 15:19:16,806: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:19:16,807: WARNING/ForkPoolWorker-7] TWTR
+[2022-11-20 15:19:16,807: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-20 15:19:16,807: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:19:16,807: WARNING/ForkPoolWorker-7] 53.7
+[2022-11-20 15:19:16,807: WARNING/ForkPoolWorker-7] Current value of stock: 53.7, high value of tunnel: 100, current time: 2022-11-20 12:19:16.807713+00:00
+[2022-11-20 15:19:16,808: WARNING/ForkPoolWorker-7] send email buy
+[2022-11-20 15:19:19,706: WARNING/ForkPoolWorker-7] 0
+[2022-11-20 15:19:21,578: WARNING/ForkPoolWorker-7] ['victorclutes@gmail.com', 'victorlutes@usp.br']
+[2022-11-20 15:19:21,578: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-20 15:19:21,578: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:19:21,578: WARNING/ForkPoolWorker-7] GOOG
+[2022-11-20 15:19:21,578: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-20 15:19:21,578: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:19:21,578: WARNING/ForkPoolWorker-7] 97.8
+[2022-11-20 15:19:21,578: WARNING/ForkPoolWorker-7] Current value of stock: 97.8, high value of tunnel: 60, current time: 2022-11-20 12:19:21.578640+00:00
+[2022-11-20 15:19:21,579: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-20 15:19:24,545: INFO/ForkPoolWorker-7] Task update_shares[c9e47b0f-5a92-4dcc-a53c-77fd2ce76097] succeeded in 9.903099876013584s: None
+[2022-11-20 15:20:14,686: INFO/MainProcess] Task update_shares[b904c5f9-a5df-4f49-8d45-f8d2c0dace04] received
+[2022-11-20 15:20:14,698: WARNING/ForkPoolWorker-7] 15
+[2022-11-20 15:20:14,699: WARNING/ForkPoolWorker-7] 4
+[2022-11-20 15:20:14,699: WARNING/ForkPoolWorker-7] 2
+[2022-11-20 15:20:14,699: WARNING/ForkPoolWorker-7] 1
+[2022-11-20 15:20:14,699: WARNING/ForkPoolWorker-7] 0
+[2022-11-20 15:20:16,637: WARNING/ForkPoolWorker-7] ['victorclutes@gmail.com', 'victorlutes@usp.br']
+[2022-11-20 15:20:16,637: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-20 15:20:16,637: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:20:16,637: WARNING/ForkPoolWorker-7] GOOG
+[2022-11-20 15:20:16,637: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-20 15:20:16,637: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:20:16,638: WARNING/ForkPoolWorker-7] 97.8
+[2022-11-20 15:20:16,638: WARNING/ForkPoolWorker-7] Current value of stock: 97.8, high value of tunnel: 60, current time: 2022-11-20 12:20:16.638249+00:00
+[2022-11-20 15:20:16,639: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-20 15:20:20,180: INFO/ForkPoolWorker-7] Task update_shares[b904c5f9-a5df-4f49-8d45-f8d2c0dace04] succeeded in 5.492709664977156s: None
+[2022-11-20 15:24:14,863: INFO/MainProcess] Task update_shares[350c6d39-72f1-4083-9895-9b23a7bb4d9f] received
+[2022-11-20 15:24:14,866: WARNING/ForkPoolWorker-7] 19
+[2022-11-20 15:24:14,866: WARNING/ForkPoolWorker-7] 8
+[2022-11-20 15:24:14,866: WARNING/ForkPoolWorker-7] 2
+[2022-11-20 15:24:14,866: WARNING/ForkPoolWorker-7] 1
+[2022-11-20 15:24:14,866: WARNING/ForkPoolWorker-7] 0
+[2022-11-20 15:24:16,801: WARNING/ForkPoolWorker-7] ['victorclutes@gmail.com', 'victorlutes@usp.br']
+[2022-11-20 15:24:16,801: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-20 15:24:16,801: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:24:16,801: WARNING/ForkPoolWorker-7] GOOG
+[2022-11-20 15:24:16,801: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-20 15:24:16,801: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:24:16,801: WARNING/ForkPoolWorker-7] 97.8
+[2022-11-20 15:24:16,802: WARNING/ForkPoolWorker-7] Current value of stock: 97.8, high value of tunnel: 60, current time: 2022-11-20 12:24:16.801992+00:00
+[2022-11-20 15:24:16,802: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-20 15:24:20,030: INFO/ForkPoolWorker-7] Task update_shares[350c6d39-72f1-4083-9895-9b23a7bb4d9f] succeeded in 5.166222361032851s: None
+[2022-11-20 15:25:14,925: INFO/MainProcess] Task update_shares[d4ab4a6b-426e-4df8-9bd0-2607bb5a008a] received
+[2022-11-20 15:25:14,952: WARNING/ForkPoolWorker-7] 20
+[2022-11-20 15:25:14,952: WARNING/ForkPoolWorker-7] 9
+[2022-11-20 15:25:14,952: WARNING/ForkPoolWorker-7] 3
+[2022-11-20 15:25:14,952: WARNING/ForkPoolWorker-7] 2
+[2022-11-20 15:25:14,952: WARNING/ForkPoolWorker-7] 0
+[2022-11-20 15:25:16,866: WARNING/ForkPoolWorker-7] ['victorclutes@gmail.com', 'victorlutes@usp.br']
+[2022-11-20 15:25:16,866: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-20 15:25:16,866: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:25:16,866: WARNING/ForkPoolWorker-7] GOOG
+[2022-11-20 15:25:16,866: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-20 15:25:16,866: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:25:16,866: WARNING/ForkPoolWorker-7] 97.8
+[2022-11-20 15:25:16,866: WARNING/ForkPoolWorker-7] Current value of stock: 97.8, high value of tunnel: 60, current time: 2022-11-20 12:25:16.866719+00:00
+[2022-11-20 15:25:16,869: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-20 15:25:19,663: INFO/ForkPoolWorker-7] Task update_shares[d4ab4a6b-426e-4df8-9bd0-2607bb5a008a] succeeded in 4.731052841059864s: None
+[2022-11-20 15:26:14,965: INFO/MainProcess] Task update_shares[676afe25-0162-457c-9c75-f0687c973b11] received
+[2022-11-20 15:26:14,969: WARNING/ForkPoolWorker-7] 21
+[2022-11-20 15:26:14,970: WARNING/ForkPoolWorker-7] 0
+[2022-11-20 15:26:17,076: WARNING/ForkPoolWorker-7] ['victorclutes@gmail.com', 'victorlutes@usp.br']
+[2022-11-20 15:26:17,076: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-20 15:26:17,076: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:26:17,076: WARNING/ForkPoolWorker-7] TSLA
+[2022-11-20 15:26:17,077: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-20 15:26:17,077: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:26:17,077: WARNING/ForkPoolWorker-7] 180.19
+[2022-11-20 15:26:17,077: WARNING/ForkPoolWorker-7] Current value of stock: 180.19, high value of tunnel: 100, current time: 2022-11-20 12:26:17.077421+00:00
+[2022-11-20 15:26:17,078: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-20 15:26:20,216: WARNING/ForkPoolWorker-7] 0
+[2022-11-20 15:26:21,949: WARNING/ForkPoolWorker-7] ['victorclutes@gmail.com', 'victorlutes@usp.br']
+[2022-11-20 15:26:21,949: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-20 15:26:21,949: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:26:21,949: WARNING/ForkPoolWorker-7] META
+[2022-11-20 15:26:21,949: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-20 15:26:21,949: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:26:21,949: WARNING/ForkPoolWorker-7] 112.05
+[2022-11-20 15:26:21,949: WARNING/ForkPoolWorker-7] Current value of stock: 112.05, high value of tunnel: 100, current time: 2022-11-20 12:26:21.949806+00:00
+[2022-11-20 15:26:21,950: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-20 15:26:25,141: WARNING/ForkPoolWorker-7] 3
+[2022-11-20 15:26:25,141: WARNING/ForkPoolWorker-7] 0
+[2022-11-20 15:26:27,279: WARNING/ForkPoolWorker-7] ['victorclutes@gmail.com', 'victorlutes@usp.br']
+[2022-11-20 15:26:27,279: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-20 15:26:27,279: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:26:27,280: WARNING/ForkPoolWorker-7] GOOG
+[2022-11-20 15:26:27,280: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-20 15:26:27,280: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:26:27,280: WARNING/ForkPoolWorker-7] 97.8
+[2022-11-20 15:26:27,280: WARNING/ForkPoolWorker-7] Current value of stock: 97.8, high value of tunnel: 60, current time: 2022-11-20 12:26:27.280257+00:00
+[2022-11-20 15:26:27,281: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-20 15:26:30,282: WARNING/ForkPoolWorker-7] 0
+[2022-11-20 15:26:32,252: WARNING/ForkPoolWorker-7] ['victorclutes@gmail.com', 'victorlutes@usp.br']
+[2022-11-20 15:26:32,252: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-20 15:26:32,252: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:26:32,253: WARNING/ForkPoolWorker-7] BBD
+[2022-11-20 15:26:32,253: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-20 15:26:32,253: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:26:32,253: WARNING/ForkPoolWorker-7] 2.9
+[2022-11-20 15:26:32,253: WARNING/ForkPoolWorker-7] Current value of stock: 1.0, high value of tunnel: 10, current time: 2022-11-20 12:26:32.253509+00:00
+[2022-11-20 15:26:32,260: INFO/ForkPoolWorker-7] Task update_shares[676afe25-0162-457c-9c75-f0687c973b11] succeeded in 17.293438252992928s: None
+[2022-11-20 15:30:15,163: INFO/MainProcess] Task update_shares[c8b5b92e-b823-4b02-8adb-dc3184ee0967] received
+[2022-11-20 15:30:15,168: WARNING/ForkPoolWorker-7] 25
+[2022-11-20 15:30:15,169: WARNING/ForkPoolWorker-7] 4
+[2022-11-20 15:30:15,169: WARNING/ForkPoolWorker-7] 0
+[2022-11-20 15:30:16,907: WARNING/ForkPoolWorker-7] ['victorlutes@usp.br']
+[2022-11-20 15:30:16,907: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-20 15:30:16,907: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:30:16,907: WARNING/ForkPoolWorker-7] META
+[2022-11-20 15:30:16,907: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-20 15:30:16,907: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:30:16,907: WARNING/ForkPoolWorker-7] 112.05
+[2022-11-20 15:30:16,907: WARNING/ForkPoolWorker-7] Current value of stock: 112.05, high value of tunnel: 100, current time: 2022-11-20 12:30:16.907767+00:00
+[2022-11-20 15:30:16,908: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-20 15:30:19,653: WARNING/ForkPoolWorker-7] 3
+[2022-11-20 15:30:19,654: WARNING/ForkPoolWorker-7] 0
+[2022-11-20 15:30:21,219: WARNING/ForkPoolWorker-7] ['victorlutes@usp.br']
+[2022-11-20 15:30:21,220: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-20 15:30:21,220: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:30:21,220: WARNING/ForkPoolWorker-7] GOOG
+[2022-11-20 15:30:21,220: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-20 15:30:21,220: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:30:21,220: WARNING/ForkPoolWorker-7] 97.8
+[2022-11-20 15:30:21,220: WARNING/ForkPoolWorker-7] Current value of stock: 97.8, high value of tunnel: 60, current time: 2022-11-20 12:30:21.220898+00:00
+[2022-11-20 15:30:21,221: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-20 15:30:24,087: WARNING/ForkPoolWorker-7] 0
+[2022-11-20 15:30:26,104: WARNING/ForkPoolWorker-7] ['victorlutes@usp.br']
+[2022-11-20 15:30:26,105: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-20 15:30:26,105: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:30:26,105: WARNING/ForkPoolWorker-7] BBD
+[2022-11-20 15:30:26,105: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-20 15:30:26,105: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:30:26,105: WARNING/ForkPoolWorker-7] 2.9
+[2022-11-20 15:30:26,105: WARNING/ForkPoolWorker-7] Current value of stock: 2.9, high value of tunnel: 10, current time: 2022-11-20 12:30:26.105503+00:00
+[2022-11-20 15:30:26,112: INFO/ForkPoolWorker-7] Task update_shares[c8b5b92e-b823-4b02-8adb-dc3184ee0967] succeeded in 10.945770145044662s: None
+[2022-11-20 15:31:15,237: INFO/MainProcess] Task update_shares[84edc2af-32d4-4d07-bcd0-f4a4668e84e8] received
+[2022-11-20 15:31:15,254: WARNING/ForkPoolWorker-7] 26
+[2022-11-20 15:31:15,254: WARNING/ForkPoolWorker-7] 5
+[2022-11-20 15:31:15,254: WARNING/ForkPoolWorker-7] 1
+[2022-11-20 15:31:15,254: WARNING/ForkPoolWorker-7] 0
+[2022-11-20 15:31:17,919: WARNING/ForkPoolWorker-7] ['victorlutes@usp.br']
+[2022-11-20 15:31:17,919: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-20 15:31:17,919: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:31:17,919: WARNING/ForkPoolWorker-7] TWTR
+[2022-11-20 15:31:17,919: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-20 15:31:17,919: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:31:17,919: WARNING/ForkPoolWorker-7] 53.7
+[2022-11-20 15:31:17,919: WARNING/ForkPoolWorker-7] Current value of stock: 53.7, high value of tunnel: 100, current time: 2022-11-20 12:31:17.919667+00:00
+[2022-11-20 15:31:17,920: WARNING/ForkPoolWorker-7] send email buy
+[2022-11-20 15:31:20,604: WARNING/ForkPoolWorker-7] 0
+[2022-11-20 15:31:22,750: WARNING/ForkPoolWorker-7] ['victorlutes@usp.br']
+[2022-11-20 15:31:22,750: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-20 15:31:22,750: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:31:22,751: WARNING/ForkPoolWorker-7] GOOG
+[2022-11-20 15:31:22,751: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-20 15:31:22,751: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:31:22,751: WARNING/ForkPoolWorker-7] 97.8
+[2022-11-20 15:31:22,751: WARNING/ForkPoolWorker-7] Current value of stock: 97.8, high value of tunnel: 60, current time: 2022-11-20 12:31:22.751517+00:00
+[2022-11-20 15:31:22,752: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-20 15:31:25,745: WARNING/ForkPoolWorker-7] 0
+[2022-11-20 15:31:28,121: WARNING/ForkPoolWorker-7] ['victorlutes@usp.br']
+[2022-11-20 15:31:28,122: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-20 15:31:28,122: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:31:28,122: WARNING/ForkPoolWorker-7] BBD
+[2022-11-20 15:31:28,122: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-20 15:31:28,122: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:31:28,122: WARNING/ForkPoolWorker-7] 2.9
+[2022-11-20 15:31:28,123: WARNING/ForkPoolWorker-7] Current value of stock: 2.9, high value of tunnel: 10, current time: 2022-11-20 12:31:28.123035+00:00
+[2022-11-20 15:31:28,125: INFO/ForkPoolWorker-7] Task update_shares[84edc2af-32d4-4d07-bcd0-f4a4668e84e8] succeeded in 12.884512076969258s: None
+[2022-11-20 15:32:15,226: INFO/MainProcess] Task update_shares[22c38703-3f78-4732-9321-663aee35be5e] received
+[2022-11-20 15:32:15,234: WARNING/ForkPoolWorker-7] 27
+[2022-11-20 15:32:15,234: WARNING/ForkPoolWorker-7] 6
+[2022-11-20 15:32:15,234: WARNING/ForkPoolWorker-7] 2
+[2022-11-20 15:32:15,234: WARNING/ForkPoolWorker-7] 1
+[2022-11-20 15:32:15,234: WARNING/ForkPoolWorker-7] 0
+[2022-11-20 15:32:17,413: WARNING/ForkPoolWorker-7] ['victorlutes@usp.br', 'testvictorlutes@gmail.com']
+[2022-11-20 15:32:17,414: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-20 15:32:17,414: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:32:17,414: WARNING/ForkPoolWorker-7] GOOG
+[2022-11-20 15:32:17,414: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-20 15:32:17,414: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:32:17,414: WARNING/ForkPoolWorker-7] 97.8
+[2022-11-20 15:32:17,414: WARNING/ForkPoolWorker-7] Current value of stock: 97.8, high value of tunnel: 60, current time: 2022-11-20 12:32:17.414525+00:00
+[2022-11-20 15:32:17,415: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-20 15:32:20,286: WARNING/ForkPoolWorker-7] 0
+[2022-11-20 15:32:21,748: WARNING/ForkPoolWorker-7] ['victorlutes@usp.br', 'testvictorlutes@gmail.com']
+[2022-11-20 15:32:21,749: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-20 15:32:21,749: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:32:21,749: WARNING/ForkPoolWorker-7] BBD
+[2022-11-20 15:32:21,749: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-20 15:32:21,749: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:32:21,749: WARNING/ForkPoolWorker-7] 2.9
+[2022-11-20 15:32:21,749: WARNING/ForkPoolWorker-7] Current value of stock: 2.9, high value of tunnel: 10, current time: 2022-11-20 12:32:21.749678+00:00
+[2022-11-20 15:32:21,751: INFO/ForkPoolWorker-7] Task update_shares[22c38703-3f78-4732-9321-663aee35be5e] succeeded in 6.520683025941253s: None
+[2022-11-20 15:33:15,275: INFO/MainProcess] Task update_shares[dc3959cd-d1d7-4775-953d-2b6a16c8eb66] received
+[2022-11-20 15:33:15,278: WARNING/ForkPoolWorker-7] 28
+[2022-11-20 15:33:15,278: WARNING/ForkPoolWorker-7] 7
+[2022-11-20 15:33:15,278: WARNING/ForkPoolWorker-7] 3
+[2022-11-20 15:33:15,278: WARNING/ForkPoolWorker-7] 2
+[2022-11-20 15:33:15,278: WARNING/ForkPoolWorker-7] 0
+[2022-11-20 15:33:17,657: WARNING/ForkPoolWorker-7] ['victorlutes@usp.br', 'testvictorlutes@gmail.com']
+[2022-11-20 15:33:17,657: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-20 15:33:17,657: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:33:17,658: WARNING/ForkPoolWorker-7] GOOG
+[2022-11-20 15:33:17,658: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-20 15:33:17,658: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:33:17,658: WARNING/ForkPoolWorker-7] 97.8
+[2022-11-20 15:33:17,658: WARNING/ForkPoolWorker-7] Current value of stock: 97.8, high value of tunnel: 60, current time: 2022-11-20 12:33:17.658890+00:00
+[2022-11-20 15:33:17,659: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-20 15:33:20,741: WARNING/ForkPoolWorker-7] 0
+[2022-11-20 15:33:22,574: WARNING/ForkPoolWorker-7] ['victorlutes@usp.br', 'testvictorlutes@gmail.com']
+[2022-11-20 15:33:22,574: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-20 15:33:22,574: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:33:22,574: WARNING/ForkPoolWorker-7] BBD
+[2022-11-20 15:33:22,575: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-20 15:33:22,575: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:33:22,575: WARNING/ForkPoolWorker-7] 2.9
+[2022-11-20 15:33:22,575: WARNING/ForkPoolWorker-7] Current value of stock: 2.9, high value of tunnel: 10, current time: 2022-11-20 12:33:22.575201+00:00
+[2022-11-20 15:33:22,577: INFO/ForkPoolWorker-7] Task update_shares[dc3959cd-d1d7-4775-953d-2b6a16c8eb66] succeeded in 7.301125035039149s: None
+[2022-11-20 15:34:15,572: INFO/MainProcess] Task update_shares[95f36109-f7cd-473f-aa97-af33ec978593] received
+[2022-11-20 15:34:16,041: WARNING/ForkPoolWorker-7] 29
+[2022-11-20 15:34:16,041: WARNING/ForkPoolWorker-7] 8
+[2022-11-20 15:34:16,042: WARNING/ForkPoolWorker-7] 0
+[2022-11-20 15:34:18,312: WARNING/ForkPoolWorker-7] ['victorlutes@usp.br', 'testvictorlutes@gmail.com']
+[2022-11-20 15:34:18,313: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-20 15:34:18,313: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:34:18,313: WARNING/ForkPoolWorker-7] META
+[2022-11-20 15:34:18,313: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-20 15:34:18,313: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:34:18,313: WARNING/ForkPoolWorker-7] 112.05
+[2022-11-20 15:34:18,313: WARNING/ForkPoolWorker-7] Current value of stock: 112.05, high value of tunnel: 100, current time: 2022-11-20 12:34:18.313407+00:00
+[2022-11-20 15:34:18,314: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-20 15:34:21,231: WARNING/ForkPoolWorker-7] 3
+[2022-11-20 15:34:21,231: WARNING/ForkPoolWorker-7] 0
+[2022-11-20 15:34:23,203: WARNING/ForkPoolWorker-7] ['victorlutes@usp.br', 'testvictorlutes@gmail.com']
+[2022-11-20 15:34:23,203: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-20 15:34:23,203: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:34:23,203: WARNING/ForkPoolWorker-7] GOOG
+[2022-11-20 15:34:23,203: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-20 15:34:23,203: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:34:23,203: WARNING/ForkPoolWorker-7] 97.8
+[2022-11-20 15:34:23,203: WARNING/ForkPoolWorker-7] Current value of stock: 97.8, high value of tunnel: 60, current time: 2022-11-20 12:34:23.203841+00:00
+[2022-11-20 15:34:23,204: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-20 15:34:26,186: WARNING/ForkPoolWorker-7] 0
+[2022-11-20 15:34:28,019: WARNING/ForkPoolWorker-7] ['victorlutes@usp.br', 'testvictorlutes@gmail.com']
+[2022-11-20 15:34:28,019: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-20 15:34:28,019: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:34:28,019: WARNING/ForkPoolWorker-7] BBD
+[2022-11-20 15:34:28,019: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-20 15:34:28,019: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:34:28,019: WARNING/ForkPoolWorker-7] 2.9
+[2022-11-20 15:34:28,019: WARNING/ForkPoolWorker-7] Current value of stock: 2.9, high value of tunnel: 10, current time: 2022-11-20 12:34:28.019927+00:00
+[2022-11-20 15:34:28,021: INFO/ForkPoolWorker-7] Task update_shares[95f36109-f7cd-473f-aa97-af33ec978593] succeeded in 11.988852852024138s: None
+[2022-11-20 15:37:15,701: INFO/MainProcess] Task update_shares[cf7e332f-5100-4f0b-b85c-40a503cdd7e9] received
+[2022-11-20 15:37:15,705: WARNING/ForkPoolWorker-7] 32
+[2022-11-20 15:37:15,705: WARNING/ForkPoolWorker-7] 1
+[2022-11-20 15:37:15,705: WARNING/ForkPoolWorker-7] 3
+[2022-11-20 15:37:15,705: WARNING/ForkPoolWorker-7] 2
+[2022-11-20 15:37:15,705: WARNING/ForkPoolWorker-7] 0
+[2022-11-20 15:37:17,664: WARNING/ForkPoolWorker-7] ['victorlutes@usp.br', 'testvictorlutes@gmail.com', 'victorclutes@gmail.com']
+[2022-11-20 15:37:17,664: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-20 15:37:17,664: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:37:17,664: WARNING/ForkPoolWorker-7] GOOG
+[2022-11-20 15:37:17,664: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-20 15:37:17,665: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:37:17,665: WARNING/ForkPoolWorker-7] 97.8
+[2022-11-20 15:37:17,665: WARNING/ForkPoolWorker-7] Current value of stock: 97.8, high value of tunnel: 60, current time: 2022-11-20 12:37:17.665227+00:00
+[2022-11-20 15:37:17,666: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-20 15:37:21,360: WARNING/ForkPoolWorker-7] 0
+[2022-11-20 15:37:23,320: WARNING/ForkPoolWorker-7] ['victorlutes@usp.br', 'testvictorlutes@gmail.com', 'victorclutes@gmail.com']
+[2022-11-20 15:37:23,320: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-20 15:37:23,320: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:37:23,320: WARNING/ForkPoolWorker-7] BBD
+[2022-11-20 15:37:23,320: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-20 15:37:23,320: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:37:23,320: WARNING/ForkPoolWorker-7] 2.9
+[2022-11-20 15:37:23,321: WARNING/ForkPoolWorker-7] Current value of stock: 2.9, high value of tunnel: 2, current time: 2022-11-20 12:37:23.321044+00:00
+[2022-11-20 15:37:23,321: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-20 15:37:26,384: INFO/ForkPoolWorker-7] Task update_shares[cf7e332f-5100-4f0b-b85c-40a503cdd7e9] succeeded in 10.68142826599069s: None
+[2022-11-20 15:38:15,750: INFO/MainProcess] Task update_shares[ede51dcf-f48c-486b-99f2-ac57cdf27b6c] received
+[2022-11-20 15:38:15,753: WARNING/ForkPoolWorker-7] 33
+[2022-11-20 15:38:15,753: WARNING/ForkPoolWorker-7] 2
+[2022-11-20 15:38:15,754: WARNING/ForkPoolWorker-7] 0
+[2022-11-20 15:38:17,496: WARNING/ForkPoolWorker-7] ['victorlutes@usp.br', 'testvictorlutes@gmail.com', 'victorclutes@gmail.com']
+[2022-11-20 15:38:17,496: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-20 15:38:17,497: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:38:17,497: WARNING/ForkPoolWorker-7] META
+[2022-11-20 15:38:17,497: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-20 15:38:17,497: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:38:17,497: WARNING/ForkPoolWorker-7] 112.05
+[2022-11-20 15:38:17,498: WARNING/ForkPoolWorker-7] Current value of stock: 112.05, high value of tunnel: 100, current time: 2022-11-20 12:38:17.498033+00:00
+[2022-11-20 15:38:17,499: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-20 15:38:20,433: WARNING/ForkPoolWorker-7] 3
+[2022-11-20 15:38:20,433: WARNING/ForkPoolWorker-7] 0
+[2022-11-20 15:38:23,086: WARNING/ForkPoolWorker-7] ['victorlutes@usp.br', 'testvictorlutes@gmail.com', 'victorclutes@gmail.com']
+[2022-11-20 15:38:23,086: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-20 15:38:23,086: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:38:23,087: WARNING/ForkPoolWorker-7] GOOG
+[2022-11-20 15:38:23,087: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-20 15:38:23,087: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:38:23,087: WARNING/ForkPoolWorker-7] 97.8
+[2022-11-20 15:38:23,087: WARNING/ForkPoolWorker-7] Current value of stock: 97.8, high value of tunnel: 60, current time: 2022-11-20 12:38:23.087714+00:00
+[2022-11-20 15:38:23,088: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-20 15:38:26,224: WARNING/ForkPoolWorker-7] 0
+[2022-11-20 15:38:28,026: WARNING/ForkPoolWorker-7] ['victorlutes@usp.br', 'testvictorlutes@gmail.com', 'victorclutes@gmail.com']
+[2022-11-20 15:38:28,027: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-20 15:38:28,027: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:38:28,027: WARNING/ForkPoolWorker-7] BBD
+[2022-11-20 15:38:28,027: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-20 15:38:28,027: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:38:28,027: WARNING/ForkPoolWorker-7] 2.9
+[2022-11-20 15:38:28,027: WARNING/ForkPoolWorker-7] Current value of stock: 2.9, high value of tunnel: 2, current time: 2022-11-20 12:38:28.027499+00:00
+[2022-11-20 15:38:28,028: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-20 15:38:30,963: INFO/ForkPoolWorker-7] Task update_shares[ede51dcf-f48c-486b-99f2-ac57cdf27b6c] succeeded in 15.212007435970008s: None
+[2022-11-20 15:39:15,807: INFO/MainProcess] Task update_shares[0c482794-cd64-4dba-8ff4-80f847aada45] received
+[2022-11-20 15:39:15,810: WARNING/ForkPoolWorker-7] 34
+[2022-11-20 15:39:15,810: WARNING/ForkPoolWorker-7] 3
+[2022-11-20 15:39:15,810: WARNING/ForkPoolWorker-7] 1
+[2022-11-20 15:39:15,810: WARNING/ForkPoolWorker-7] 0
+[2022-11-20 15:39:17,439: WARNING/MainProcess] consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/home/victor/.local/lib/python3.10/site-packages/celery/worker/consumer/consumer.py", line 332, in start
+    blueprint.start(self)
+  File "/home/victor/.local/lib/python3.10/site-packages/celery/bootsteps.py", line 116, in start
+    step.start(parent)
+  File "/home/victor/.local/lib/python3.10/site-packages/celery/worker/consumer/consumer.py", line 628, in start
+    c.loop(*c.loop_args())
+  File "/home/victor/.local/lib/python3.10/site-packages/celery/worker/loops.py", line 97, in asynloop
+    next(loop)
+  File "/home/victor/.local/lib/python3.10/site-packages/kombu/asynchronous/hub.py", line 362, in create_loop
+    cb(*cbargs)
+  File "/home/victor/.local/lib/python3.10/site-packages/kombu/transport/redis.py", line 1326, in on_readable
+    self.cycle.on_readable(fileno)
+  File "/home/victor/.local/lib/python3.10/site-packages/kombu/transport/redis.py", line 562, in on_readable
+    chan.handlers[type]()
+  File "/home/victor/.local/lib/python3.10/site-packages/kombu/transport/redis.py", line 906, in _receive
+    ret.append(self._receive_one(c))
+  File "/home/victor/.local/lib/python3.10/site-packages/kombu/transport/redis.py", line 916, in _receive_one
+    response = c.parse_response()
+  File "/home/victor/.local/lib/python3.10/site-packages/redis/client.py", line 1500, in parse_response
+    response = self._execute(conn, conn.read_response)
+  File "/home/victor/.local/lib/python3.10/site-packages/redis/client.py", line 1482, in _execute
+    return conn.retry.call_with_retry(
+  File "/home/victor/.local/lib/python3.10/site-packages/redis/retry.py", line 49, in call_with_retry
+    fail(error)
+  File "/home/victor/.local/lib/python3.10/site-packages/redis/client.py", line 1484, in <lambda>
+    lambda error: self._disconnect_raise_connect(conn, error),
+  File "/home/victor/.local/lib/python3.10/site-packages/redis/client.py", line 1471, in _disconnect_raise_connect
+    raise error
+  File "/home/victor/.local/lib/python3.10/site-packages/redis/retry.py", line 46, in call_with_retry
+    return do()
+  File "/home/victor/.local/lib/python3.10/site-packages/redis/client.py", line 1483, in <lambda>
+    lambda: command(*args, **kwargs),
+  File "/home/victor/.local/lib/python3.10/site-packages/redis/connection.py", line 824, in read_response
+    response = self._parser.read_response(disable_decoding=disable_decoding)
+  File "/home/victor/.local/lib/python3.10/site-packages/redis/connection.py", line 318, in read_response
+    raw = self._buffer.readline()
+  File "/home/victor/.local/lib/python3.10/site-packages/redis/connection.py", line 249, in readline
+    self._read_from_socket()
+  File "/home/victor/.local/lib/python3.10/site-packages/redis/connection.py", line 195, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+[2022-11-20 15:39:17,471: WARNING/MainProcess] /home/victor/.local/lib/python3.10/site-packages/celery/worker/consumer/consumer.py:367: CPendingDeprecationWarning: 
+In Celery 5.1 we introduced an optional breaking change which
+on connection loss cancels all currently executed tasks with late acknowledgement enabled.
+These tasks cannot be acknowledged as the connection is gone, and the tasks are automatically redelivered back to the queue.
+You can enable this behavior using the worker_cancel_long_running_tasks_on_connection_loss setting.
+In Celery 5.1 it is set to False by default. The setting will be set to True by default in Celery 6.0.
+
+  warnings.warn(CANCEL_TASKS_BY_DEFAULT, CPendingDeprecationWarning)
+
+[2022-11-20 15:39:17,476: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 2.00 seconds... (1/100)
+
+[2022-11-20 15:39:17,850: WARNING/ForkPoolWorker-7] ['victorlutes@usp.br', 'testvictorlutes@gmail.com', 'victorclutes@gmail.com']
+[2022-11-20 15:39:17,851: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-20 15:39:17,851: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:39:17,851: WARNING/ForkPoolWorker-7] TWTR
+[2022-11-20 15:39:17,851: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-20 15:39:17,851: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:39:17,851: WARNING/ForkPoolWorker-7] 53.7
+[2022-11-20 15:39:17,851: WARNING/ForkPoolWorker-7] Current value of stock: 53.7, high value of tunnel: 100, current time: 2022-11-20 12:39:17.851793+00:00
+[2022-11-20 15:39:17,853: WARNING/ForkPoolWorker-7] send email buy
+[2022-11-20 15:39:19,480: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 4.00 seconds... (2/100)
+
+[2022-11-20 15:39:20,877: WARNING/ForkPoolWorker-7] 0
+[2022-11-20 15:39:22,894: WARNING/ForkPoolWorker-7] ['victorlutes@usp.br', 'testvictorlutes@gmail.com', 'victorclutes@gmail.com']
+[2022-11-20 15:39:22,894: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-20 15:39:22,895: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:39:22,895: WARNING/ForkPoolWorker-7] GOOG
+[2022-11-20 15:39:22,895: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-20 15:39:22,895: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:39:22,895: WARNING/ForkPoolWorker-7] 97.8
+[2022-11-20 15:39:22,896: WARNING/ForkPoolWorker-7] Current value of stock: 97.8, high value of tunnel: 60, current time: 2022-11-20 12:39:22.896025+00:00
+[2022-11-20 15:39:22,897: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-20 15:39:23,486: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 6.00 seconds... (3/100)
+
+[2022-11-20 15:39:25,956: WARNING/ForkPoolWorker-7] 0
+[2022-11-20 15:39:28,533: WARNING/ForkPoolWorker-7] ['victorlutes@usp.br', 'testvictorlutes@gmail.com', 'victorclutes@gmail.com']
+[2022-11-20 15:39:28,533: WARNING/ForkPoolWorker-7] Ticker: 
+[2022-11-20 15:39:28,533: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:39:28,533: WARNING/ForkPoolWorker-7] BBD
+[2022-11-20 15:39:28,533: WARNING/ForkPoolWorker-7] Market Price:
+[2022-11-20 15:39:28,533: WARNING/ForkPoolWorker-7]  
+[2022-11-20 15:39:28,534: WARNING/ForkPoolWorker-7] 2.9
+[2022-11-20 15:39:28,534: WARNING/ForkPoolWorker-7] Current value of stock: 2.9, high value of tunnel: 2, current time: 2022-11-20 12:39:28.534205+00:00
+[2022-11-20 15:39:28,535: WARNING/ForkPoolWorker-7] send email sell
+[2022-11-20 15:39:29,495: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 8.00 seconds... (4/100)
+
+[2022-11-20 15:39:31,533: WARNING/ForkPoolWorker-7] /home/victor/.local/lib/python3.10/site-packages/celery/app/trace.py:660: RuntimeWarning: Exception raised outside body: ConnectionError('Error 111 connecting to localhost:6379. Connection refused.'):
+Traceback (most recent call last):
+  File "/home/victor/.local/lib/python3.10/site-packages/redis/connection.py", line 1393, in get_connection
+    if connection.can_read():
+  File "/home/victor/.local/lib/python3.10/site-packages/redis/connection.py", line 809, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/victor/.local/lib/python3.10/site-packages/redis/connection.py", line 315, in can_read
+    return self._buffer and self._buffer.can_read(timeout)
+  File "/home/victor/.local/lib/python3.10/site-packages/redis/connection.py", line 222, in can_read
+    return bool(self.length) or self._read_from_socket(
+  File "/home/victor/.local/lib/python3.10/site-packages/redis/connection.py", line 195, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/victor/.local/lib/python3.10/site-packages/redis/connection.py", line 611, in connect
+    sock = self.retry.call_with_retry(
+  File "/home/victor/.local/lib/python3.10/site-packages/redis/retry.py", line 46, in call_with_retry
+    return do()
+  File "/home/victor/.local/lib/python3.10/site-packages/redis/connection.py", line 612, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+  File "/home/victor/.local/lib/python3.10/site-packages/redis/connection.py", line 677, in _connect
+    raise err
+  File "/home/victor/.local/lib/python3.10/site-packages/redis/connection.py", line 665, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/victor/.local/lib/python3.10/site-packages/celery/app/trace.py", line 518, in trace_task
+    task.backend.mark_as_done(
+  File "/home/victor/.local/lib/python3.10/site-packages/celery/backends/base.py", line 162, in mark_as_done
+    self.store_result(task_id, result, state, request=request)
+  File "/home/victor/.local/lib/python3.10/site-packages/celery/backends/base.py", line 528, in store_result
+    self._store_result(task_id, result, state, traceback,
+  File "/home/victor/.local/lib/python3.10/site-packages/celery/backends/base.py", line 956, in _store_result
+    current_meta = self._get_task_meta_for(task_id)
+  File "/home/victor/.local/lib/python3.10/site-packages/celery/backends/base.py", line 978, in _get_task_meta_for
+    meta = self.get(self.get_key_for_task(task_id))
+  File "/home/victor/.local/lib/python3.10/site-packages/celery/backends/redis.py", line 368, in get
+    return self.client.get(key)
+  File "/home/victor/.local/lib/python3.10/site-packages/redis/commands/core.py", line 1705, in get
+    return self.execute_command("GET", name)
+  File "/home/victor/.local/lib/python3.10/site-packages/redis/client.py", line 1235, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/home/victor/.local/lib/python3.10/site-packages/redis/connection.py", line 1397, in get_connection
+    connection.connect()
+  File "/home/victor/.local/lib/python3.10/site-packages/redis/connection.py", line 617, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:6379. Connection refused.
+
+  warn(RuntimeWarning(
+
+[2022-11-20 15:39:37,506: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 10.00 seconds... (5/100)
+
+[2022-11-20 15:39:51,211: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 2.00 seconds... (1/100)
+
+[2022-11-20 15:40:05,137: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 2.00 seconds... (1/100)
+

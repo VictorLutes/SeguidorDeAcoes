@@ -5,8 +5,8 @@
             <th>Name | </th>
             <th>Low | </th>
             <th>High | </th>
-            <th>Current Price | </th>
             <th>Minutes between updates | </th>
+            <th>Current Price | </th>
             <th>Edit | </th>
             <th>Delete</th>
         </tr>
@@ -15,8 +15,8 @@
                 <td>{{stock.sigla}}</td>
                 <td>{{stock.low}}</td>
                 <td>{{stock.high}}</td>
-                <td>{{stock.currentPrice}}</td>
                 <td>{{stock.minutes}}</td>
+                <td>{{stock.currentPrice}}</td>
                 <td><a href="{% url 'update_stock' stock.id %}">Update</a></td>
                 <td><a href="{% url 'delete_stock' stock.id %}">Delete</a></td>
             </tr>
