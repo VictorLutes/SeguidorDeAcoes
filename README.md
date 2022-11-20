@@ -14,6 +14,11 @@ Para poder enviar emails:<br>
 &emsp;&emsp;        emailHostUser='seu email que será usado para enviar os emails'<br>
 &emsp;&emsp;        emailHostPassword='apps password desse email' (pode criar ela em https://security.google.com/settings/security/apppasswords, qualquer duvida me mande um email e eu envio o meu config.py com minhas senhas para vocês testarem)<br>
 <br>
+
+Crie a base de dados local rodando:<br>
+&emsp;    python manage.py migrate --run-syncdb <br>
+
+<br>
 Para executar:<br>
 &emsp;    rode em 3 abas do terminal dentro da pasta do projeto:<br>
 &emsp;    1o terminal executa: "python manage.py runserver 8080" (ou qualquer outra porta)<br>
