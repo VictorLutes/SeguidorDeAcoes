@@ -7,8 +7,10 @@ import yfinance as yf
 from django.core.mail import send_mail
 from django.conf import settings
 
+#funcao que executa a cada um minuto, periodicamente atualizando as acoes e mandando emails se o valor esta fora do tunel
 @shared_task(name='update_shares')
 def update_shares():
+    #recipient_list guarda todos os emails que foram adicionados pelo usuario para receberem notificacoes
     recipient_list=[]
     querieEmails=Recipient.objects.all()
     for recipient in querieEmails:
@@ -18,16 +20,17 @@ def update_shares():
         timesince = datetime.now(timezone.utc) - share.timeCreated
         minutessince = int(timesince.total_seconds() / 60)
         print(minutessince%share.minutes)
-        if(minutessince%share.minutes==0):
-            #update currentPrice
+        if(minutessince%share.minutes==0):#atualiza o valor da acao e envia email so a cada share.minutes minutos
+            #atualiza currentPrice, o valor da acao usando o yahoo finance
             ticker = yf.Ticker(share.sigla).info
-            market_price = ticker['regularMarketPrice']
+            share.currentPrice = ticker['regularMarketPrice']
             print(recipient_list)
             print('Ticker: ', share.sigla)
-            print('Market Price:', market_price)
+            print('Market Price:', share.currentPrice)
             print('Current value of stock: '+str(share.currentPrice)+', high value of tunnel: '+str(share.high)+', current time: '+str(datetime.now(timezone.utc)-timedelta(hours=3)))
-            share.currentPrice=market_price
+            #salva a alteracao no valor da acao
             share.save()
+            #se o valor é ascima do que foi passado no limite superior do tunel, envio email para vender a acao
             if(share.high<share.currentPrice):
                 print("send email sell")
                 send_mail(
@@ -37,6 +40,7 @@ def update_shares():
                     recipient_list,
                     fail_silently=False
                 )
+            #se o valor é abaixo do que foi passado no limite inferior do tunel, envio email para comprar a acao
             if(share.currentPrice<share.low):
                 print("send email buy")
                 send_mail(
