@@ -41,6 +41,6 @@ Estrutura do projeto<br>
 &emsp;        O arquivo models.py que guarda os modelos das acoes e dos recipientes(emails)<br>
 &emsp;        O arquivo tasks.py que contem a tarefa de atualizar as acoes e roda a cada minutos, atualizando as acoes a cada n minutos<br>
 <br>
-![web page](https://github.com/VictorLutes/DesafioAlfa/main/page.png)
-![email notifications](https://github.com/VictorLutes/DesafioAlfa/main/email.png)
+![web page](https://github.com/VictorLutes/DesafioAlfa/blob/main/page.png)
+![email notifications](https://github.com/VictorLutes/DesafioAlfa/blob/main/emails.png)
 
