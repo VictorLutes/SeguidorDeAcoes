@@ -1,4 +1,5 @@
 # DesafioAlfa
+Entre na pasta principal followShares<br><br>
 Para executar primeiro instale:<br>
 &emsp;    pip install django<br>
 &emsp;    pip install celery<br>
