@@ -1,7 +1,7 @@
-# DesafioAlfa
+# SeguidorDeAcoes
 Entre na pasta principal followShares<br><br>
 Para executar primeiro instale:<br>
-&emsp;    pip install django<br>
+&emsp;    pip install djaDesafioAlfango<br>
 &emsp;    pip install celery<br>
 &emsp;    pip install yfinance<br>
 &emsp;    pip install django-celery<br>
