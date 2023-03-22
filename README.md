@@ -1,4 +1,4 @@
-# SeguidorDeAcoes
+# Seguidor De Acoes
 Entre na pasta principal followShares<br><br>
 Para executar primeiro instale:<br>
 &emsp;    pip install djaDesafioAlfango<br>
