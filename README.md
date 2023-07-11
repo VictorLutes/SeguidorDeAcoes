@@ -1,6 +1,6 @@
 # Stock Price Tracker
 
-This web application allows you to follow the price of different shares and set price tunnels and recipients to be notified via email if the price exceeds or falls bellow certains values.
+This web application allows you to follow the price of different shares and set price tunnels and recipients to be notified via email if the price exceeds or falls bellow certain values.
 
 ![web page](https://github.com/VictorLutes/DesafioAlfa/blob/main/page.png)
 ![email notifications](https://github.com/VictorLutes/DesafioAlfa/blob/main/emails.png)
